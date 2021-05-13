@@ -1,7 +1,7 @@
 # Objective
 
-_State what this recipe aims to achieve. Use imperative mood (think git commit
-message)._
+_State what this recipe aims to achieve. Envision the end state: "When you are
+done with this recipe, you will have..."._
 
 # Steps
 
