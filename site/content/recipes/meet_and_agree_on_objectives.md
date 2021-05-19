@@ -1,3 +1,7 @@
+# Objective
+
+Set the code review up for success by making sure the reviewer and author are on the same page.
+
 # Steps
 
 -  If they have some, reviewer(s) state their expectation for the code review.
@@ -70,4 +74,3 @@ focus of the code review.
     options that would improve its structure. They agree that they could
     look into performance in a follow up review, once the code is easier
     to read.
-
