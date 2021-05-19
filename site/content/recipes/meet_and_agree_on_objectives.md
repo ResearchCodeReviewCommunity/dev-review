@@ -1,3 +1,9 @@
+# Steps
+
+-  If they have some, reviewer(s) state their expectation for the code review.
+-  If they have some, the code author state their expectation for the code review.
+-  Author and reviewers agree on the focus of the review
+
 # Description
 
 Code review can be a powerful tool to improve code quality&#x2026; provided
@@ -32,12 +38,6 @@ often makes code harder to read and maintain.
 Another special case is a "debugging session". The code author is looking
 for help to fix a specific problem, and code quality may not be the primary
 focus of the code review.
-
-# Steps
-
--   If they have some, reviewer(s) state their expectation for the code review.
--   If they have some, the code author state their expectation for the code review.
--   Author and reviewers agree on the focus of the review
 
 # Examples
 
