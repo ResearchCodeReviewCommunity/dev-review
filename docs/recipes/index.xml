@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Recipes on dev-review</title>
+    <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/</link>
+    <description>Recent content in Recipes on dev-review</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://researchcodereviewcommunity.github.io/dev-review/recipes/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/lonecoder/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/lonecoder/</guid>
+      <description>lone coder Context: Both author and reviewer are lone coders with no previous experience in code review.
+Both authors and reviewers work within the same group or same lab. They work on different projects but are both familiar with the scientific field.
+Nomenclature: R = reviewer, A = author
+Finding a reviewer: Anyone can review code, even if they are not a proficient coder/software engineer. However, in a group or lab, it may be possible to pair a more experienced author or reviewer with a less experienced author or reviewer.</description>
+    </item>
+    
+  </channel>
+</rss>
