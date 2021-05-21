@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
+<meta property="og:description" content="Objective Set the code review up for success by making sure the reviewer and author are on the same page.
+Steps  If they have some, reviewer(s) state their expectation for the code review. If they have some, the code author state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality… provided that participants agree on what &ldquo;improve&rdquo; means." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" /><meta property="article:section" content="recipes" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Objective Set the code review up for success by making sure the reviewer and author are on the same page.
+Steps  If they have some, reviewer(s) state their expectation for the code review. If they have some, the code author state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality… provided that participants agree on what &ldquo;improve&rdquo; means."/>
+<meta name="application-name" content="dev-review">
+<meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" /><link rel="next" href="https://researchcodereviewcommunity.github.io/dev-review/recipes/lonecoder/" /><link rel="stylesheet" href="/dev-review/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/dev-review/css/style.min.css"><link rel="stylesheet" href="/dev-review/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dev-review/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/meet_and_agree_on_objectives\/"
+        },"genre": "recipes","wordcount":  594 ,
+        "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/meet_and_agree_on_objectives\/","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/dev-review/dev-review/posts/"> Posts </a><a class="menu-item" href="/dev-review/dev-review/tags/"> Tags </a><a class="menu-item" href="/dev-review/dev-review/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/dev-review/dev-review/posts/" title="">Posts</a><a class="menu-item" href="/dev-review/dev-review/tags/" title="">Tags</a><a class="menu-item" href="/dev-review/dev-review/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster"></h1><div class="content" id="content"><h1 id="objective">Objective</h1>
+<p>Set the code review up for success by making sure the reviewer and author are on the same page.</p>
+<h1 id="steps">Steps</h1>
+<ul>
+<li>If they have some, reviewer(s) state their expectation for the code review.</li>
+<li>If they have some, the code author state their expectation for the code review.</li>
+<li>Author and reviewers agree on the focus of the review</li>
+</ul>
+<h1 id="description">Description</h1>
+<p>Code review can be a powerful tool to improve code quality… provided
+that participants agree on what &ldquo;improve&rdquo; means. Should you focus on
+code readability? Or performance? For a code review to be productive,
+both the author and the reviewer(s) must agree on the direction to
+follow.</p>
+<p>During the startup meeting, all participants in the review state their
+expectations and agree on what the objective of the review should be.
+As the code author, you could plan to receive feedback on a particular
+design choice you made last week.  Or maybe you&rsquo;re planning to pick
+the reviewer&rsquo;s brain about optimising the performance of that sluggish
+subroutine. As a reviewer, you could be motivated by learning new
+features of a programming language. You could also want to put the
+focus on readability, because you think there is room for improvement
+in this direction. These expectations must be made clear during the
+startup meeting, before the review itself starts.</p>
+<p>As a rule of thumb, we recommend that the review focuses on one of the
+following themes, ordered by priority:</p>
+<ul>
+<li>Code readability</li>
+<li>Code maintainability</li>
+<li>Code extensability</li>
+<li>Performance</li>
+</ul>
+<p>Particularly, we do not recommend focusing on performance unless it is
+justified from a scientific perspective. Optimising for performance
+often makes code harder to read and maintain.</p>
+<p>Another special case is a &ldquo;debugging session&rdquo;. The code author is looking
+for help to fix a specific problem, and code quality may not be the primary
+focus of the code review.</p>
+<h1 id="examples">Examples</h1>
+<ul>
+<li>
+<p>R is familiar with the basics of C++, but never used it
+frequently. They would like to learn what kind of features their C++
+programmers colleagues use, and learn a few tricks along the way.  A
+has been working on a C++ analysis pipeline on their own for the
+past few weeks and is about to share it with their team. Before they
+do so, they would like to check that the code is easy to read and
+the structure easy to understand, even by colleagues with little
+experience in C++. R and A decide</p>
+</li>
+<li>
+<p>A is looking is unsure about a the design of a module their wrote
+last week.  It works, but it is complicated and contains a lot of
+duplicated code. They would like somebody else to assess
+readability and potentially suggest alternative design choices.  R
+is keen on helping a colleague improving their code, but doesn&rsquo;t
+have specific expectations. they find the code easy to read although
+they agree that the structure is odd.  A and R decide to have a look
+at the module, looking to better define the issue, assess current
+maintainability and, if time allows, draft a few solutions to
+improve code structure.</p>
+</li>
+<li>
+<p>A&rsquo;s numerical experiments are running much slower than
+expected. They identified a specific function performing poorly, and
+they&rsquo;re looking for help in investigating the root cause. R previously
+had a look at the function and the surrounding code, but found it
+very hard to read. R suggests that they focus on identifying what
+makes the code difficult to read and, if time allows, think of some
+options that would improve its structure. They agree that they could
+look into performance in a follow up review, once the code is easier
+to read.</p>
+</li>
+</ul>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.82.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/dev-review/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/dev-review/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/dev-review/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/dev-review/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/dev-review/js/theme.min.js"></script></body>
+</html>
