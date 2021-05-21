@@ -1,0 +1,39 @@
+name: Deploy website to gh-pages branch
+
+on:
+  push:
+    branches:
+      - hugo
+
+jobs:
+
+  build-and-deploy:
+
+    runs-on: ubuntu-20.04
+
+    steps:
+
+    - name: checkout repo & submodules
+      uses: actions/checkout@v2
+      with:
+        submodules: true
+        fetch-depth: 0
+
+    - name: Build the website
+      run: |
+        wget https://github.com/gohugoio/hugo/releases/download/v0.82.0/hugo_0.82.0_Linux-64bit.deb
+        sudo dpkg -i hugo_0.82.0_Linux-64bit.deb
+        hugo
+      working-directory: site
+
+    - name: Deploy contents of `site/public` to gh-pages docs dir
+      run: |
+        git config user.name "github-action"
+        git config user.email "github-action"
+        git checkout gh-pages
+        rm -rf docs/*
+        cp -rT site/public docs
+        rm -rf site
+        git add --all
+        git commit -m "deploy website" || echo "No changes to commit"
+        git push
