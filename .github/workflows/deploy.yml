@@ -3,7 +3,7 @@ name: Deploy website to gh-pages branch
 on:
   push:
     branches:
-      - hugo
+      - main
 
 jobs:
 
