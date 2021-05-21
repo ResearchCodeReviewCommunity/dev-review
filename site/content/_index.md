@@ -1,3 +1,7 @@
-# Welcome to dev-review!
+# Code Review During Development
 
-Tweak
+## Developer Profiles
+* [Single Developer](./flowcharts/lonecoder.md)
+
+## Resources
+* [Glossary](./glossary.md)
