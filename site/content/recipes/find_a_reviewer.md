@@ -155,6 +155,30 @@ Loop through steps 1 to 3 until you get a bite. Once you have your reviewer,
 proceed to the [next step](meet_and_agree_on_objectives) and arrange a meeting
 to agree on objectives for the review.
 
+# Examples
 
-# Example
-
+- Priya is a researcher in a small research group in a physics department, and
+  she's currently writing a Python library to process her experimental data.
+  She doesn't think anyone in her immediate research circle would be
+  appropriate for reviewing her code because she is mostly concerned about
+  whether it conforms to Pythonic standards and she knows her PI will see it as
+  a waste of time. Luckily, she recalls that there is a Python User Group at
+  her university that meets fairly regularly and has a Slack space. She
+  privately messages one of the administrators of the Slack space, asking
+  whether code review is something that the community might be able to help
+  with. The administrator responds positively, and Priya posts a brief
+  advertisement giving a background to her code and describing her objective to
+  have it checked for "Pythonic" idioms. Funnily enough, another researcher
+  from her Physics Department, who she didn't know, responds and agrees to help
+  with a code review, stating he has experience developing Python packages in
+  the open source community.
+- Sam is a PhD student in a medium-sized bioinformatics group writing R
+  scripts, who combines their own novel algorithms with libraries from their
+  group and the broader community. Sam has heard many warnings about code
+  reproducibility and maintainability and wants to make sure they can run their
+  code later in the PhD and build upon it. They are fortunate to have a healthy
+  and relaxed working relationship with one of the postdocs in the group who
+  has lots of R experience. Sam brings up the idea of code review in one of
+  their water cooler conversations, mentioning the points about reproducibility
+  and maintainability. The postdoc enthusiastically agrees, also wondering
+  aloud whether the whole group should start doing something like that.
