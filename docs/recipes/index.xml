@@ -8,6 +8,16 @@
     <language>en</language><atom:link href="https://researchcodereviewcommunity.github.io/dev-review/recipes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/</guid>
+      <description>Objective Upon completing this recipe, you as the code author will have found someone suitable to perform the role of reviewer in the code review.
+Steps  Identify the top areas to search for candidate reviewers.   Your research group Research Software Engineer (RSE) group at your institution Language or library specific groups at your institution Open source or research communities you contribute to Others? Last resort is to throw it up on Code Review Stack Exchange https://codereview.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/lonecoder/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -26,6 +36,18 @@ Finding a reviewer: Anyone can review code, even if they are not a proficient co
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/</guid>
       <description>Objective Set the code review up for success by making sure the reviewer and author are on the same page.
 Steps  If they have some, reviewer(s) state their expectation for the code review. If they have some, the code author state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality… provided that participants agree on what &amp;ldquo;improve&amp;rdquo; means.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/recipe_template/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/recipe_template/</guid>
+      <description>Objective State what this recipe aims to achieve. Envision the end state: &amp;ldquo;When you are done with this recipe, you will have&amp;hellip;&amp;rdquo;.
+Steps Give a top-level overview of the steps in this recipe.
+Description Provide details for each of the steps above.
+Example Using the author/reviewer profile or otherwise, add some narrative of how these steps might play out in a real world example.</description>
     </item>
     
   </channel>
