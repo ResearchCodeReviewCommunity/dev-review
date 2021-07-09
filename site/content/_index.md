@@ -14,3 +14,4 @@ graph TD;
 
 ## Resources
 * [Glossary](glossary)
+* [References and Related Work](refs-related)
