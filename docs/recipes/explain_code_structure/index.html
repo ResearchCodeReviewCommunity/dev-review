@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
+<meta property="og:description" content="Objective Reviewer has a good understanding of the overall structure of the code. When reviewing a section of the code, they have an idea of its purpose and how it relates to other parts. If the section to review is not yet defined, they are in a position to help the author choose it.
+Steps  The author describes the overall structure of the code to the reviewer(s). The author highlights the section to review and describes how it relates to other parts of the code  Description Even if code is isolated inside a function or module, the way it is written is influenced by its context." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/" /><meta property="article:section" content="recipes" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Objective Reviewer has a good understanding of the overall structure of the code. When reviewing a section of the code, they have an idea of its purpose and how it relates to other parts. If the section to review is not yet defined, they are in a position to help the author choose it.
+Steps  The author describes the overall structure of the code to the reviewer(s). The author highlights the section to review and describes how it relates to other parts of the code  Description Even if code is isolated inside a function or module, the way it is written is influenced by its context."/>
+<meta name="application-name" content="dev-review">
+<meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/" /><link rel="prev" href="https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/" /><link rel="stylesheet" href="/dev-review/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/dev-review/css/style.min.css"><link rel="stylesheet" href="/dev-review/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dev-review/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/explain_code_structure\/"
+        },"genre": "recipes","wordcount":  504 ,
+        "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/explain_code_structure\/","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/dev-review/dev-review/posts/"> Posts </a><a class="menu-item" href="/dev-review/dev-review/tags/"> Tags </a><a class="menu-item" href="/dev-review/dev-review/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/dev-review/dev-review/posts/" title="">Posts</a><a class="menu-item" href="/dev-review/dev-review/tags/" title="">Tags</a><a class="menu-item" href="/dev-review/dev-review/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster"></h1><div class="content" id="content"><h1 id="objective">Objective</h1>
+<p>Reviewer has a good understanding of the overall structure of the
+code. When reviewing a section of the code, they have an idea of its
+purpose and how it relates to other parts.
+If the section to review is not yet defined, they are in a position to
+help the author choose it.</p>
+<h1 id="steps">Steps</h1>
+<ol>
+<li>The author describes the overall structure of the code to the reviewer(s).</li>
+<li>The author highlights the section to review and describes how it
+relates to other parts of the code</li>
+</ol>
+<h1 id="description">Description</h1>
+<p>Even if code is isolated inside a function or module, the way it is
+written is influenced by its context. For the review to be useful, the
+reviewer(s) must have, at the very least, a rough idea of how the code
+they are looking at relates to other parts of the code. For instance,
+there could be constraints on the shape of data that comes in, or the
+data that comes out.</p>
+<p>Therefore, is it important that the author takes a few minutes to
+describe the overall structure of the code. The relationship between
+key modules, functions or subroutines should be made clear. If the
+code is too large to be outlined in less than five minutes, do not
+describe its entire structure. Rather, focus on the context
+surrounding the piece of code to be reviewed, answering questions such
+as: from where is it called and when? What data is available and where
+does is come from? What data goes out and to where?</p>
+<p>This step can be done either by sitting together (physically or
+virtually) or through written conversation (e.g. emails). Real-time
+conversation is often the most efficient way to convey the most
+information in the least time, but the slower pace of written
+correspondence can also help building a stronger understanding of
+context. This choice will often depend on your preferences and the
+amount of time available.</p>
+<h1 id="examples">Examples</h1>
+<ul>
+<li>
+<p>Adam has been contributing to a large Fortran code. The module he&rsquo;s
+implementing connects to only a couple of others, and Adam isn&rsquo;t
+actually familiar with the rest of the code. He would like the
+review to focus on a function that they&rsquo;ve written last week. This
+function does some complex data manipulation in order to pass it to
+another function within a separate module. Adam starts by stating
+the purpose of the module they&rsquo;re implementing, then moves on to
+describing how the function to be reviewed fits into this
+module. Finally, they make clear how this function depends on
+another module, and what it entails regarding data format.</p>
+</li>
+<li>
+<p>Sam has written an R package to automate a data analysis pipeline.
+This package is made of a main function that itself calls 4 four
+others in a sequence, representing the four steps of the pipeline.
+The review focus on the function implementing the third step. Sam
+describes the whole package and details the purpose of this specific
+function. She then explains what data goes in and in what format,
+and what data goes out and in what format.</p>
+</li>
+</ul>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.85.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/dev-review/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/dev-review/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/dev-review/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/dev-review/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/dev-review/js/theme.min.js"></script></body>
+</html>

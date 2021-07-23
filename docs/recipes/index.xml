@@ -8,6 +8,16 @@
     <language>en</language><atom:link href="https://researchcodereviewcommunity.github.io/dev-review/recipes/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title></title>
+      <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/</guid>
+      <description>Objective Reviewer has a good understanding of the overall structure of the code. When reviewing a section of the code, they have an idea of its purpose and how it relates to other parts. If the section to review is not yet defined, they are in a position to help the author choose it.
+Steps  The author describes the overall structure of the code to the reviewer(s). The author highlights the section to review and describes how it relates to other parts of the code  Description Even if code is isolated inside a function or module, the way it is written is influenced by its context.</description>
+    </item>
+    
+    <item>
+      <title></title>
       <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
