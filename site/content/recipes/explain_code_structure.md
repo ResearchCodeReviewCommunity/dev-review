@@ -8,7 +8,7 @@ help the author choose it.
 
 # Steps
 
-1. The author describes the structure of the code to the reviewer(s).
+1. The author describes the overall structure of the code to the reviewer(s).
 2. The author highlights the section to review and describes how it
    relates to other parts of the code
    
