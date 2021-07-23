@@ -30,6 +30,14 @@ surrounding the piece of code to be reviewed, answering questions such
 as: from where is it called and when? What data is available and where
 does is come from? What data goes out and to where?
 
+This step can be done either by sitting together (physically or
+virtually) or through written conversation (e.g. emails). Real-time
+conversation is often the most efficient way to convey the most
+information in the least time, but the slower pace of written
+correspondence can also help building a stronger understanding of
+context. This choice will often depend on your preferences and the
+amount of time available.
+
 # Examples
 
 - A has been contributing to a large Fortran code. The module they're
