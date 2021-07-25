@@ -6,7 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
-<meta property="og:description" content="Find a reviewer Expand for flowchart     Objective Upon completing this recipe, you as the code author will have found someone suitable to perform the role of reviewer in the code review.
+<meta property="og:description" content="Find a reviewer Expand for flowchart      Objective Upon completing this recipe, you as the code author will have found someone suitable to perform the role of reviewer in the code review.
 Steps  Identify the top areas to search for candidate reviewers.   Your research group Research Software Engineer (RSE) group at your institution Language or library specific groups at your institution Open source or research communities you contribute to Others?" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/" /><meta property="article:section" content="recipes" />
@@ -15,7 +15,7 @@ Steps  Identify the top areas to search for candidate reviewers.   Your research
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Find a reviewer Expand for flowchart     Objective Upon completing this recipe, you as the code author will have found someone suitable to perform the role of reviewer in the code review.
+<meta name="twitter:description" content="Find a reviewer Expand for flowchart      Objective Upon completing this recipe, you as the code author will have found someone suitable to perform the role of reviewer in the code review.
 Steps  Identify the top areas to search for candidate reviewers.   Your research group Research Software Engineer (RSE) group at your institution Language or library specific groups at your institution Open source or research communities you contribute to Others?"/>
 <meta name="application-name" content="dev-review">
 <meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
@@ -29,7 +29,7 @@ Steps  Identify the top areas to search for candidate reviewers.   Your research
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/find_a_reviewer\/"
-        },"genre": "recipes","wordcount":  1515 ,
+        },"genre": "recipes","wordcount":  1851 ,
         "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/find_a_reviewer\/","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -80,7 +80,8 @@ Steps  Identify the top areas to search for candidate reviewers.   Your research
             <i class="icon fas fa-list-ol fa-fw"></i>Expand for flowchart<i class="details-icon fas fa-angle-right fa-fw"></i>
         </div>
         <div class="details-content">
-            <div class="admonition-content"><!-- raw HTML omitted --></div>
+            <div class="admonition-content"><div class="mermaid" id="id-1"></div>
+</div>
         </div>
     </div>
 <h2 id="objective">Objective</h2>
@@ -142,7 +143,8 @@ be beneficial to get reviewers from outside your research group. They can
 challenge implicit and shaky assumptions in your code that only someone with
 fresh eyes and less expertise might raise. Moreover, they tend to be more
 impartial.</p>
-<!-- raw HTML omitted -->
+<details>
+<summary> Click here to get some ideas of places to search... </summary>
 <p>If you are fortunate enough to have a Research Software Engineering
 (RSE) group at your institution, then any member of that team would make a great
 reviewer for your code. These groups have many different ways of operating, so
@@ -178,7 +180,7 @@ make a post on the <a href="https://codereview.stackexchange.com/" target="_blan
 Exchange</a>. See the <a href="https://codereview.stackexchange.com/help/on-topic" target="_blank" rel="noopener noreffer">&ldquo;What questions can I
 ask about here?&quot;</a> page to
 determine whether it could suit your needs. Anecdotally, StackExchange sites can yield harsh criticism and are not always the most warm or welcoming places. Consider whether you want to open yourself up to that before posting.</p>
-<!-- raw HTML omitted -->
+</details>
 <h3 id="criteria">Step 2: Criteria for Screening</h3>
 <p>Before contacting a potential reviewer, consider whether they are a good fit to
 the code being reviewed. Ideally, a reviewer will have some experience in the
@@ -189,7 +191,8 @@ and fast. For example, if your main concern is readability, then a reviewer will
 only require familiarity with the programming language, and specific frameworks
 will matter less. These considerations equally apply to selecting a group or
 community to advertsie in.</p>
-<!-- raw HTML omitted -->
+<details>
+  <summary> Click for detailed recommendations... </summary>
 <ol>
 <li>Do they have some level of experience with the programming language(s) of
 your code? They do not need to be experts in the language(s), but they
@@ -207,7 +210,7 @@ a large impact upon the value of the review. The importance of this
 criterion scales with the extent to which your code relies on another
 library or tool and how essential it is to the functionality of your code.</li>
 </ol>
-<!-- raw HTML omitted -->
+</details>
 <h3 id="contact">Step 3: Contact candidate or advertise</h3>
 <p>Everyone has their own way of writing messages, and we don&rsquo;t want to be too
 prescriptive about how you reach out to a potential reviewer. If you already
@@ -236,10 +239,37 @@ whole process will take?)</li>
 proceed to the <a href="meet_and_agree_on_objectives" rel="">next step</a> and arrange a meeting
 to agree on objectives for the review.</p>
 <h2 id="examples">Examples</h2>
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-<!-- raw HTML omitted -->
-</div></div></div>
+<details>
+<summary> Priya and her Python Package </summary>
+Priya is a researcher in a small research group in a physics department, and
+she's currently writing a Python package to process experimental data. She knows
+the routines will be useful to others in her field, so she wants to share this
+package.  She doesn't think anyone in her immediate research circle would be
+appropriate for reviewing her code because she is mostly concerned about whether
+it conforms to Pythonic standards and she knows her PI will see it as a waste of
+time. Luckily, she recalls that there is a Python User Group at her university
+that meets fairly regularly and has a Slack space. She privately messages one of
+the administrators of the Slack space, asking whether code review is something
+that the community might be able to help with. The administrator responds
+positively, and Priya posts a brief advertisement giving a background to her
+code and describing her objective to have it checked for "Pythonic" idioms.
+Funnily enough, another researcher from her Physics Department, who she didn't
+know, responds and agrees to help with a code review, stating he has experience
+developing Python packages in the open source community.
+</details>
+<details>
+<summary> Sam and their R Scripts </summary>
+Sam is a PhD student in a medium-sized bioinformatics group writing R
+scripts, who combines their own novel algorithms with libraries from their
+group and the broader community. Sam has heard many warnings about code
+reproducibility and maintainability and wants to make sure they can run their
+code later in the PhD and build upon it. They are fortunate to have a healthy
+and relaxed working relationship with one of the postdocs in the group who
+has lots of R experience. Sam brings up the idea of code review in one of
+their water cooler conversations, mentioning the points about reproducibility
+and maintainability. The postdoc enthusiastically agrees, also wondering
+aloud whether the whole group should start doing something like that.
+</details></div></div></div>
             </main><footer class="footer">
         <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.85.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
                 </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2021</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/dev-review/" target="_blank"></a></span></div>
