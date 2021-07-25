@@ -5,9 +5,11 @@ a single developer that would like to make code review
 part of your development process.
 
 {{< mermaid >}}
+%% lonecoder mermaid
 graph TD;
   Link(Links to more info)
   A([Start]) --> B(Meet initial requirements)
+  %%YouAreHere(You are here)
   B --> C(Find a reviewer)
   C --> D(Meet and agree on objectives)
   D --> E(Explain scientific context)
@@ -20,9 +22,11 @@ graph TD;
   click D "https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" "Meet and agree on objectives"
   click F "https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/" "Explain code structure"
 
-  classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
   classDef default fill:#8EB6DE,stroke:#162D4D,stroke-width:2px,color:#162D4D;
+  classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
+  classDef youAreHereBox fill:#FA3800,stroke:#000,stroke-width:2px,color:#000;
   class Link,C,D,F linkedBox
+  class YouAreHere youAreHereBox
 {{< /mermaid >}}
 
 To read about this workflow in detail, please see
