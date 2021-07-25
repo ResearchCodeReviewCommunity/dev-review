@@ -20,3 +20,6 @@ $RECYCLE.BIN/
 
 # Hugo executables
 hugo.exe
+
+# Generated scss
+site/resources/_gen/*
