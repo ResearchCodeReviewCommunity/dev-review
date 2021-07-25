@@ -14,6 +14,8 @@ graph TD;
   F --> G{Is code large?}
   G -- No --> H[Select up to 400 lines to work on]
   G -- Yes --> I[Split into smaller sections and agree on a series of reviews]
+
+  click C "https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/" "Find a reviewer"
 {{< /mermaid >}}
 
 To read about this workflow in detail, please see
