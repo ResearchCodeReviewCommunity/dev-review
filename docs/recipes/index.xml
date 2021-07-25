@@ -12,8 +12,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/</guid>
-      <description>Objective Reviewer has a good understanding of the overall structure of the code. When reviewing a section of the code, they have an idea of its purpose and how it relates to other parts. If the section to review is not yet defined, they are in a position to help the author choose it.
-Steps  The author describes the overall structure of the code to the reviewer(s). The author highlights the section to review and describes how it relates to other parts of the code  Description Even if code is isolated inside a function or module, the way it is written is influenced by its context.</description>
+      <description>Explain code structure Objective Reviewer has a good understanding of the overall structure of the code. When reviewing a section of the code, they have an idea of its purpose and how it relates to other parts. If the section to review is not yet defined, they are in a position to help the author choose it.
+Steps  The author describes the overall structure of the code to the reviewer(s).</description>
     </item>
     
     <item>
@@ -22,8 +22,8 @@ Steps  The author describes the overall structure of the code to the reviewer(s)
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/</guid>
-      <description>Objective Upon completing this recipe, you as the code author will have found someone suitable to perform the role of reviewer in the code review.
-Steps  Identify the top areas to search for candidate reviewers.   Your research group Research Software Engineer (RSE) group at your institution Language or library specific groups at your institution Open source or research communities you contribute to Others? Last resort is to throw it up on Code Review Stack Exchange https://codereview.</description>
+      <description>Find a reviewer Expand for flowchart     Objective Upon completing this recipe, you as the code author will have found someone suitable to perform the role of reviewer in the code review.
+Steps  Identify the top areas to search for candidate reviewers.   Your research group Research Software Engineer (RSE) group at your institution Language or library specific groups at your institution Open source or research communities you contribute to Others?</description>
     </item>
     
     <item>
@@ -32,7 +32,7 @@ Steps  Identify the top areas to search for candidate reviewers.   Your research
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/lonecoder/</guid>
-      <description>lone coder Context: Both author and reviewer are lone coders with no previous experience in code review.
+      <description>Lone Coder Context: Both author and reviewer are lone coders with no previous experience in code review.
 Both authors and reviewers work within the same group or same lab. They work on different projects but are both familiar with the scientific field.
 Nomenclature: R = reviewer, A = author
 Finding a reviewer: Anyone can review code, even if they are not a proficient coder/software engineer. However, in a group or lab, it may be possible to pair a more experienced author or reviewer with a less experienced author or reviewer.</description>
@@ -44,7 +44,7 @@ Finding a reviewer: Anyone can review code, even if they are not a proficient co
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/</guid>
-      <description>Objective Set the code review up for success by making sure the reviewer and author are on the same page.
+      <description>Meet and agree on objectives Objective Set the code review up for success by making sure the reviewer and author are on the same page.
 Steps  If they have some, reviewer(s) state their expectation for the code review. If they have some, the code author state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality… provided that participants agree on what &amp;ldquo;improve&amp;rdquo; means.</description>
     </item>
     
@@ -54,7 +54,7 @@ Steps  If they have some, reviewer(s) state their expectation for the code revie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/recipe_template/</guid>
-      <description>Objective State what this recipe aims to achieve. Envision the end state: &amp;ldquo;When you are done with this recipe, you will have&amp;hellip;&amp;rdquo;.
+      <description>Title Objective State what this recipe aims to achieve. Envision the end state: &amp;ldquo;When you are done with this recipe, you will have&amp;hellip;&amp;rdquo;.
 Steps Give a top-level overview of the steps in this recipe.
 Description Provide details for each of the steps above.
 Example Using the author/reviewer profile or otherwise, add some narrative of how these steps might play out in a real world example.</description>
