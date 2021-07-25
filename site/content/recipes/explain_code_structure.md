@@ -1,4 +1,6 @@
-# Objective
+# Explain code structure
+
+## Objective
 
 Reviewer has a good understanding of the overall structure of the
 code. When reviewing a section of the code, they have an idea of its
@@ -6,13 +8,13 @@ purpose and how it relates to other parts.
 If the section to review is not yet defined, they are in a position to
 help the author choose it.
 
-# Steps
+## Steps
 
 1. The author describes the overall structure of the code to the reviewer(s).
 2. The author highlights the section to review and describes how it
    relates to other parts of the code
    
-# Description
+## Description
 
 Even if code is isolated inside a function or module, the way it is
 written is influenced by its context. For the review to be useful, the
@@ -38,7 +40,7 @@ correspondence can also help building a stronger understanding of
 context. This choice will often depend on your preferences and the
 amount of time available.
 
-# Examples
+## Examples
 
 - Adam has been contributing to a large Fortran code. The module he's
   implementing connects to only a couple of others, and Adam isn't

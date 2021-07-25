@@ -1,4 +1,5 @@
-# lone coder
+# Lone Coder
+
 ## Context:
 Both author and reviewer are lone coders with no previous experience
 in code review.

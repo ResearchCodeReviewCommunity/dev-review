@@ -1,9 +1,11 @@
-# Objective
+# Find a reviewer
+
+## Objective
 
 Upon completing this recipe, you as the _code author_ will have found someone
 suitable to perform the role of _reviewer_ in the code review.
 
-# Steps
+## Steps
 
 1. Identify the top areas to search for candidate reviewers.
   - Your research group
@@ -19,7 +21,7 @@ suitable to perform the role of _reviewer_ in the code review.
 4. Repeat 1 to 3 until you get a bite.
 5. Confirm candidate can fulfill minimum thresholds.
 
-# Description
+## Description
 
 It might seem strange, but code review has something in common with partner
 dancing: it takes two to tango and (at least) two to review code. Without a
@@ -38,7 +40,7 @@ satisfy to make a code review worthwhile for both parties, and there are some
 places to search for reviewers that have a higher chance of yielding someone
 that fulfills these criteria. Let's look at these now.
 
-## Step 1: Places to Look {#search}
+### Step 1: Places to Look {#search}
 
 When looking for a reviewer, your first port of call should almost always be
 your own research group. Your colleagues are the most likely to be using the
@@ -104,7 +106,7 @@ determine whether it could suit your needs. Anecdotally, StackExchange sites can
 
 </details>
 
-## Step 2: Criteria for Screening {#criteria}
+### Step 2: Criteria for Screening {#criteria}
 
 Before contacting a potential reviewer, consider whether they are a good fit to
 the code being reviewed. Ideally, a reviewer will have some experience in the
@@ -136,7 +138,7 @@ community to advertsie in.
    library or tool and how essential it is to the functionality of your code.
 </details>
 
-## Step 3: Contact candidate or advertise {#contact}
+### Step 3: Contact candidate or advertise {#contact}
 
 Everyone has their own way of writing messages, and we don't want to be too
 prescriptive about how you reach out to a potential reviewer. If you already
@@ -161,13 +163,13 @@ you compose:
 - An idea of the time commitment (**TODO** what is our estimate for how long the
   whole process will take?)
 
-## Step 4: Rinse and Repeat {#repeat}
+### Step 4: Rinse and Repeat {#repeat}
 
 Loop through steps 1 to 3 until you get a bite. Once you have your reviewer,
 proceed to the [next step](meet_and_agree_on_objectives) and arrange a meeting
 to agree on objectives for the review.
 
-# Examples
+## Examples
 
 <details>
 <summary> Priya and her Python Package </summary>

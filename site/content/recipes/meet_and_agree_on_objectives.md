@@ -1,14 +1,16 @@
-# Objective
+# Meet and agree on objectives
+
+## Objective
 
 Set the code review up for success by making sure the reviewer and author are on the same page.
 
-# Steps
+## Steps
 
 -  If they have some, reviewer(s) state their expectation for the code review.
 -  If they have some, the code author state their expectation for the code review.
 -  Author and reviewers agree on the focus of the review
 
-# Description
+## Description
 
 Code review can be a powerful tool to improve code quality&#x2026; provided
 that participants agree on what "improve" means. Should you focus on
@@ -43,7 +45,7 @@ Another special case is a "debugging session". The code author is looking
 for help to fix a specific problem, and code quality may not be the primary
 focus of the code review.
 
-# Examples
+## Examples
 
 -   R is familiar with the basics of C++, but never used it
     frequently. They would like to learn what kind of features their C++
