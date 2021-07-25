@@ -44,6 +44,10 @@ theme = "LoveIt"
   [markup.highlight]
     # false is a necessary configuration (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      # whether to use HTML tags directly in the document
+      unsafe = true
 
 
 [params]
