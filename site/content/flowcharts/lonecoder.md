@@ -6,6 +6,7 @@ part of your development process.
 
 {{< mermaid >}}
 graph TD;
+  Link(Links to more info)
   A([Start]) --> B(Meet initial requirements)
   B --> C(Find a reviewer)
   C --> D(Meet and agree on objectives)
@@ -18,6 +19,10 @@ graph TD;
   click C "https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/" "Find a reviewer"
   click D "https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" "Meet and agree on objectives"
   click F "https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/" "Explain code structure"
+
+  classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
+  classDef default fill:#8EB6DE,stroke:#162D4D,stroke-width:2px,color:#162D4D;
+  class Link,C,D,F linkedBox
 {{< /mermaid >}}
 
 To read about this workflow in detail, please see
