@@ -16,6 +16,8 @@ graph TD;
   G -- Yes --> I[Split into smaller sections and agree on a series of reviews]
 
   click C "https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/" "Find a reviewer"
+  click D "https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" "Meet and agree on objectives"
+  click F "https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/" "Explain code structure"
 {{< /mermaid >}}
 
 To read about this workflow in detail, please see
