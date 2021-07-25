@@ -24,7 +24,7 @@ graph TD;
   classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
   classDef youAreHereBox fill:#FA3800,stroke:#000,stroke-width:2px,color:#000;
   class Link,C,F linkedBox
-  class YouAreHere,C,D youAreHereBox
+  class YouAreHere,D youAreHereBox
 {{< /mermaid >}}
 
 {{< /admonition >}}
