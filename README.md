@@ -6,7 +6,9 @@ This repository is automatically built from [markdown](https://commonmark.org/) 
 This site uses the Hugo [LoveIt](https://hugoloveit.com/) theme.
 
 This site is available here:
-https://researchcodereviewcommunity.github.io/
+https://researchcodereviewcommunity.github.io/dev-review/
+
+<!-- Removed this, pending agreement that we should. https://researchcodereviewcommunity.github.io/ -->
 
 The following branches are important:
 
