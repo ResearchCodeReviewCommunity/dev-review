@@ -29,8 +29,9 @@ graph TD;
   E --> B
 {{< /mermaid >}}
 
-## Developer Profiles
-* [Single Developer](flowcharts/lonecoder)
+## Getting Started
+Please see [this page](flowcharts/lonecoder)
+for an overview of how you can get started with code review.
 
 ## Resources
 * [Glossary](glossary)
