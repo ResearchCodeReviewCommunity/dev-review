@@ -26,8 +26,8 @@ graph TD;
 
 ### Find a reviewer
 
-There is no code review without (a) reviewer(s). The good news is,
-almost any researcher who code is a good candidate for being
+There is no code review without a reviewer or reviewers. The good news is,
+almost any researcher who codes is a good candidate for being
 one. 
 
 Potential reviewers are not far: in your own research group, others
@@ -40,10 +40,9 @@ reviewer, and ways of getting in touch.
 ### Meet and agree on objectives
 
 A code review can improve code in a lot of different ways, but trying
-to do everything at once is rarely effective. In the [Meet and agree
-on
-objectives](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/)
-phase, participants make it clear to others people involved why their
+to do everything at once is rarely effective. In the 
+[Meet and agree on objectives](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/)
+phase, participants make it clear to others people involved why they are
 are pariticpating.
 
 The goal of this second phase is for all the participants to agree on
@@ -68,7 +67,7 @@ The [Meet to review code](https://researchcodereviewcommunity.github.io/dev-revi
 - Code author communicates the code and its context to reviewer(s) in advance.
   with context.
 - Reviewer(s) review code in light of objectives and areas of focus.
-  agreed upon durong the [Meet and agree on objectives](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/) phase.
+  agreed upon during the [Meet and agree on objectives](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/) phase.
 - Author and reviewer(s) meet and discuss the code.
 - Code author implements changes.
 - Rinse and repeat.
