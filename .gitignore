@@ -23,3 +23,7 @@ hugo.exe
 
 # Generated scss
 site/resources/_gen/*
+
+# Ignored paths and directories
+## pycharm project path
+.idea
