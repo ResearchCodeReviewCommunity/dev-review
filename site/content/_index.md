@@ -30,7 +30,7 @@ graph TD;
 {{< /mermaid >}}
 
 ## Getting Started
-Please see [this page](flowcharts/lonecoder)
+Please see [this page](flowcharts/high-level)
 for an overview of how you can get started with code review.
 
 ## Resources
