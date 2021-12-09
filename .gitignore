@@ -18,8 +18,9 @@ $RECYCLE.BIN/
 # Linux
 .directory
 
-# Hugo executables
+# Hugo executables and other
 hugo.exe
+site/.hugo_build.lock
 
 # Generated scss
 site/resources/_gen/*
@@ -27,3 +28,5 @@ site/resources/_gen/*
 # Ignored paths and directories
 ## pycharm project path
 .idea
+## vscode
+.vscode
