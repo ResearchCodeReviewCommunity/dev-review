@@ -1,11 +1,10 @@
-## Single Developer Workflow
+## Code Review Workflow
 
-Here's a high-level view of a workflow you can follow as
-a single developer that would like to make code review
-part of your development process.
+Here's a high-level view of a workflow researchers can follow to make code
+review part of their development process.
 
 {{< mermaid >}}
-%% lonecoder mermaid
+%% codereview mermaid
 graph TD;
   Link(Click on orange boxes for more detail)
   A([Start]) --> B(Find a reviewer)
