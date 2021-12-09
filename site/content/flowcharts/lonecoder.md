@@ -9,18 +9,22 @@ graph TD;
   Link(Click on orange boxes for more detail)
   A([Start]) --> B(Find a reviewer)
   B --> C(Meet and agree on objectives)
-  C --> D(Meet to review code)
-  D --> E{Have objectives been met?}
-  E -- No --> D
-  E -- Yes --> F([Finish])
+  C --> D(Author prepares code segment)
+  D --> E(Reviewer makes initial comments)
+  E --> F(Realtime review meeting)
+  F --> G(Improvements and follow up)
+  G --> H{More review needed?}
+  H -- Yes --> D
+  H -- No --> I([Finish])
 
-  click B "https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/" "Find a reviewer"
-  click C "https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" "Meet and agree on objectives"
-  click F "https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/" "Explain code structure"
+  click B "./#find-a-reviewer" "Find a reviewer"
+  click C "./#meet-and-agree-on-objectives" "Meet and agree on objectives"
+  click D,E,F,G "./#perform-code-review" "Perform Code Review"
+  click I "./#finish" "Finish"
 
   classDef default fill:#8EB6DE,stroke:#162D4D,stroke-width:2px,color:#162D4D;
   classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
-  class Link,B,C,F linkedBox
+  class Link,B,C,D,E,F,G,I linkedBox
 {{< /mermaid >}}
 
 ### Find a reviewer
@@ -53,19 +57,19 @@ useful discussion during the actual review process. Key questions are:
 - What part of the code should we look at?
 
 
-### Meet to review code
+### Perform code review
 
 This is the core of the process. The code author and reviewer(s) meet
 (in person or virtually) to discuss the code. Although the subject is
-technical, eveyone involved must remember that they are interacting
-whith humans. Empathy, humbleness and non-violent communication are
+technical, everyone involved must remember that they are interacting
+with humans. Empathy, humbleness and non-confrontational communication are
 key to a successful code review.
 
-The [Meet to review code](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_to_review_code/) phase is an iterative process, itself made of
+The [Perform code review](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_to_review_code/) phase is an iterative process, itself made of
 5 phases:
-- Code author communicates the code and its context to reviewer(s) in advance.
+- Code author communicates the code and its context to reviewer(s) in advance and
   with context.
-- Reviewer(s) review code in light of objectives and areas of focus.
+- Reviewer(s) review code in light of objectives and areas of focus,
   agreed upon during the [Meet and agree on objectives](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/) phase.
 - Author and reviewer(s) meet and discuss the code.
 - Code author implements changes.
