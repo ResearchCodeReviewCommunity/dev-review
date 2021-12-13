@@ -60,5 +60,16 @@ Description Provide details for each of the steps above.
 Example Using the author/reviewer profile or otherwise, add some narrative of how these steps might play out in a real world example.</description>
     </item>
     
+    <item>
+      <title></title>
+      <link>https://researchcodereviewcommunity.github.io/dev-review/recipes/review_meetings/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/review_meetings/</guid>
+      <description>Perform code review Draft outline base on flowcharts/high-level.md
+Code author communicates code and context Review reviews code in light of objectives and areas of focus
+Author and reviewer meet Code author implements changes Rinse and repeat </description>
+    </item>
+    
   </channel>
 </rss>
