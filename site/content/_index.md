@@ -42,11 +42,11 @@ for an overview of how you can get started with code review.
 Code review is standard practice in the software industry, as well as
 open source software communities. It is, however, very rare in
 academia.  Very generally, we believe that developers of research
-software, at evry level or career stage, would greatly benefit from
+software, at every level or career stage, would greatly benefit from
 regular human feedback on the code they write. On an individual level,
 this would provide effective learning opportunities and raise the
-quality of the programs they wirte. On a collective level, making code
+quality of the programs they write. On a collective level, making code
 review a standard practice among research software developer would
 generally raise the quality of software-based research as a whole,
-bringing the develoemt of qulity software at the core of a reseachers'
-routine.
+bringing the development of quality software at the core of a
+researcher's routine.
