@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
+<meta property="og:description" content="Perform code review Code author communicates code and context   Author selects an appropriate segment of code
+ Pick a snippet you estimate can be reivewed in about 30 minutes. We suggest picking a piece of code that is 50-100 lines. If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment Choice is helped by objectvies from MAO stage." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/recipes/perform_code_review/" /><meta property="article:section" content="recipes" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Perform code review Code author communicates code and context   Author selects an appropriate segment of code
+ Pick a snippet you estimate can be reivewed in about 30 minutes. We suggest picking a piece of code that is 50-100 lines. If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment Choice is helped by objectvies from MAO stage."/>
+<meta name="application-name" content="dev-review">
+<meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://researchcodereviewcommunity.github.io/dev-review/recipes/perform_code_review/" /><link rel="prev" href="https://researchcodereviewcommunity.github.io/dev-review/recipes/recipe_template/" /><link rel="next" href="https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" /><link rel="stylesheet" href="/dev-review/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/dev-review/css/style.min.css"><link rel="stylesheet" href="/dev-review/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dev-review/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/perform_code_review\/"
+        },"genre": "recipes","wordcount":  1130 ,
+        "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/perform_code_review\/","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/dev-review/dev-review/posts/"> Posts </a><a class="menu-item" href="/dev-review/dev-review/tags/"> Tags </a><a class="menu-item" href="/dev-review/dev-review/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/dev-review/dev-review/posts/" title="">Posts</a><a class="menu-item" href="/dev-review/dev-review/tags/" title="">Tags</a><a class="menu-item" href="/dev-review/dev-review/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster"></h1><div class="content" id="content"><h1 id="perform-code-review">Perform code review</h1>
+<h2 id="code-author-communicates-code-and-context">Code author communicates code and context</h2>
+<ol>
+<li>
+<p>Author selects an appropriate segment of code</p>
+<ul>
+<li>Pick a snippet you estimate can be reivewed in about 30 minutes.</li>
+<li>We suggest picking a piece of code that is 50-100 lines.</li>
+<li>If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment</li>
+<li>Choice is helped by objectvies from MAO stage.
+<ul>
+<li>TODO add examples: e.g. if coding style is reviewed, pick recently added class or method. The more representative of the codebase the snippet is, the more widely relevant the feedback.</li>
+<li>Author should be familiar with the details of the chosen snippet. The main idea here is to come prepared.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>Author shares the code through an appropriate medium</p>
+<ul>
+<li>When sharing the code snippet before meeting to review, the author should provide local context for the code selected
+<ul>
+<li>the <strong>overall</strong> context and structure of your code will be discussed at the <a href="meet_and_agree_on_objectives.md" rel="">Meet and Agree on Objectives stage</a></li>
+<li>e.g. For instance if you share a couple of class methods, it&rsquo;s useful for a reviewer to know about the class itself, its purpose, design and structure. Then how do the functions fit within the class and interact with each other.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<ul>
+<li>We recommend writing up this information in a short blurb and sending it to your reviewer in the same email or message where you share a link to the code itself (next step)</li>
+</ul>
+<blockquote>
+<p>this should be a callout &ldquo;How to Share Code&rdquo;</p>
+</blockquote>
+<ul>
+<li>We strongly recommend that you use a version control platform (like GitHub.com or GitLab.com) to share your code
+- Not only are these the locations where most code review happens, but they also gives your reviewer the opportunity to poke around the rest of your codebase should they need some broader context.
+- This will require the repository to be open, or perhaps you can give temporary permission to the reviewer if it is private
+- Share the URL to your file and the relevant line numbers you would like reviewed</li>
+</ul>
+<blockquote>
+<p>callout here about diff workflows &ldquo;merge workflow&rdquo;, &ldquo;github workflow&rdquo;</p>
+</blockquote>
+<pre><code>  - If you are going down an async review route, then providing the reviewer with a merge/pull request will be very helpful here
+- It might not be possible to share your code openly like this, or you may not be set up with version control yet
+  - in that case, consider using something like [GitHub gists](https://gist.github.com/) to share your code
+  - as a last resort, share your code snippet as an attachement to email or link to a file hosting location
+- Should be done a few days before the review meeting so that the reviewer has time to look at it. Exact timing should be discussed and MAO.
+- If your code has a complex environment, it might be desirable to share a containerised version of your code/software through somethign like Binder
+    - mention CODECHECK as perhaps a better option for this kind of higher level check of your code
+</code></pre>
+<h2 id="reviewer-reviews-code">Reviewer reviews code</h2>
+<ol>
+<li>Reviewer reminds themselves of objectives and areas of focus from first meeting (link to Meet and Agree on Objectives section)</li>
+<li>Reviewer consults guidelines/checklist for advice about how to evaluate the code
+<ul>
+<li>Create a distinct page &ldquo;Reviewer Guidelines&rdquo; that gives the highlights from the resources we have collected, and then link to those resources</li>
+<li>Provide a very high level summary of the subject headings here</li>
+<li>OxCRN guidelines: <a href="https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md">https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md</a></li>
+<li>maybe also <a href="http://carver.cs.ua.edu/Slides/2019/URSSI-WinterSchool/URSSI-WinterSchool-PeerCodeReview.pdf">http://carver.cs.ua.edu/Slides/2019/URSSI-WinterSchool/URSSI-WinterSchool-PeerCodeReview.pdf</a> (Jeff is part of community, probably happy to share)</li>
+</ul>
+</li>
+<li>Reviewer makes notes for future discussion on code segment in light of the above two points
+<ul>
+<li>this is not meant to be in depth (~ 20 minutes)</li>
+</ul>
+</li>
+</ol>
+<h2 id="author-and-reviewer-meet">Author and reviewer meet</h2>
+<ul>
+<li>key points:
+<ul>
+<li>there are two ways to do code review: synchronous/in-person, and asynchronous</li>
+<li>while there is not much existing research, what does exist suggests that for research code review, the process should include face-to-face, synchronous component [Wilson 2015]</li>
+<li>This is because there are such different backgrounds that can go into code review and both the author and reviewer need to make sure they are understanding each other</li>
+</ul>
+</li>
+<li>A good way to open up this meeting might be for the author and reviewer to go over the scientific context for the code review</li>
+<li>Reviewer drives review according to their notes. They discuss the code by giving direct feedback or asking questions challenging the code&rsquo;s design, implementation and documentation.</li>
+<li>Author responds to reviewer&rsquo;s comments and questions. They describe the structure, explain implementation, justify decisions.</li>
+<li>Live reviews help build trust and understand the other person&rsquo;s mindset.</li>
+<li>This is a conversation in which the code author has the opportunity to talk about their code out loud. By asking questions, expressing opinions and challenging assumptions a code reviewer triggers new ideas and different perspectives.
+<ul>
+<li>
+<blockquote>
+<p>[name=David] maybe &ldquo;suggesting alternatives&rdquo; or something a bit less aggressive than  &ldquo;challenging assumptions&rdquo;?</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li>Predefined objectives should be kept in mind. Conversation can be powerful but should be kept on a tight leash. It&rsquo;s okay for anyone to stop the conversation and say they feel it is losing focus. In this case it is time to move to the next topic.</li>
+<li></li>
+<li>A code review is not an evaluation of the author&rsquo;s worth as a programmer. Throughout the review, participants should keep in mind
+<ul>
+<li>Differences in levels of experience.</li>
+<li>Differences in scientific and programming backgrounds.</li>
+<li>Code quality is often subjective and context dependent.</li>
+<li><em>More?</em>&hellip;</li>
+<li></li>
+</ul>
+</li>
+<li>By opening their work for feedback, code authors make <em>themselves</em> vulnerable. This vulnerability must be taken into account and respected by reviewers at all times. Reviewers must take caution in expressing feedback and opinions. Authors must respect reviewer&rsquo;s comments and questions.</li>
+<li>Reviewing can be mentally demanding. It can be difficult for a reviewer to be mindful of how they phrase feedback at all times. Therefore authors should also try not to take feedback personally. This is especially true for written, asynchronous reviews.</li>
+<li>Example of questionable reviewer&rsquo;s feedback:
+<ul>
+<li>You should rename this function</li>
+<li>This function should be renamed</li>
+</ul>
+</li>
+<li>Examples of good reviewer&rsquo;s feedback
+<ul>
+<li>I think this function&rsquo;s name is misleading</li>
+<li>This function&rsquo;s name didn&rsquo;t help me understand what it does.</li>
+</ul>
+</li>
+<li>Meeting should be kept short, under 60', 45' being a good target duration in most cases. This is to avoid fatigue. Two 45' review meetings will likely be more effective than a single 90' meeting. This can, however, be decided on the spot or ahead of the meeting.</li>
+<li>Time will likely run out. It is possible than conversations on some of the points could have been shorter. It is also possible that the corresponding points needed to be discussed in details for reasons only made clear during teh review itself. In any case, both authors and reviewers can choose to meet again to continue the review.</li>
+</ul>
+<h2 id="code-author-implements-changes">Code author implements changes</h2>
+<h2 id="rinse-and-repeat">Rinse and repeat</h2>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.85.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/dev-review/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/dev-review/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/dev-review/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/dev-review/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/dev-review/js/theme.min.js"></script></body>
+</html>
