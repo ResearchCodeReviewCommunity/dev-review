@@ -31,7 +31,7 @@ graph TD;
 
 There is no code review without a reviewer or reviewers. The good news is,
 almost any researcher who codes is a good candidate for being
-one. 
+one.
 
 Potential reviewers are not far: in your own research group, others
 you collaborate with or your local Research Software Engineering
@@ -43,7 +43,7 @@ reviewer, and ways of getting in touch.
 ### Meet and agree on objectives
 
 A code review can improve code in a lot of different ways, but trying
-to do everything at once is rarely effective. In the 
+to do everything at once is rarely effective. In the
 [Meet and agree on objectives](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/)
 phase, participants make it clear to others people involved why they are
 are pariticpating.
@@ -65,8 +65,8 @@ technical, everyone involved must remember that they are interacting
 with humans. Empathy, humbleness and non-confrontational communication are
 key to a successful code review.
 
-The [Perform code review](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_to_review_code/) phase is an iterative process, itself made of
-5 phases:
+The [Perform code review](https://researchcodereviewcommunity.github.io/dev-review/recipes/perform_code_review/) phase
+is an iterative process, itself made of 5 phases:
 - Code author communicates the code and its context to reviewer(s) in advance and
   with context.
 - Reviewer(s) review code in light of objectives and areas of focus,
@@ -83,5 +83,3 @@ on](https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_ag
 objectives phase are met. In case both parties do not agree, the code
 author has decision power on whether or not to end the code review
 process.
-
-
