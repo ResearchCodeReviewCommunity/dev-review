@@ -11,9 +11,9 @@
       - Author should be familiar with the details of the chosen snippet. The main idea here is to come prepared.
 
 It's a good idea to share the code to review with the reviewer ahead
-of the review meeting. This gives an opportunity for the review to
-explore the code at their own pace and form independant
-opinions. Prior expsorure to the code will also make it easier for
+of the review meeting. This gives an opportunity for the reviewer to
+explore the code at their own pace and form independent
+opinions. Prior exposure to the code will also make it easier for
 them to navigate the code during the review itself.
 
 But sharing the code isn't enough. To build relevant opinions --and
@@ -22,8 +22,8 @@ the local context this particular piece of code fits in. As an
 illustration, picture the case where the code under review consists of
 a couple class methods. These were certainly implemented for a
 specific purpose, and in a way that they interact in a specific way
-(or do not interact). They also play particular role whithin the class
-itself, that is designed in it's own way, to fit its own purpose. The
+(or do not interact). They also play particular role within the class
+itself, that is designed in its own way, to fit its own purpose. The
 purpose, the design and the implementation of the methods and their
 surrounding code structures is key to understand the choices and
 decisions made when writing the code.
