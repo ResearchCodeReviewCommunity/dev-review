@@ -16,20 +16,22 @@ explore the code at their own pace and form independent
 opinions. Prior exposure to the code will also make it easier for
 them to navigate the code during the review itself.
 
-But sharing the code isn't enough. To build relevant opinions --and
-therefore constructive feedback-- a reviewer needs to be made aware of
-the local context this particular piece of code fits in. As an
-illustration, picture the case where the code under review consists of
-a couple class methods. These were certainly implemented for a
-specific purpose, and in a way that they interact in a specific way
-(or do not interact). They also play particular role within the class
-itself, that is designed in its own way, to fit its own purpose. The
-purpose, the design and the implementation of the methods and their
+To get the most out of the review, you as the author of the code
+will also want to help the reviewer understand
+how the particular snippet you select fits into the overall code.
+This helps the reviewer provide relevant comments
+and constructive feedback.
+As an illustration, picture the case where the code under review consists of
+a couple methods belonging to a class. The methods were implemented for a
+specific purpose, and they might interact in a specific way.
+The methods also play particular role within the class
+itself, a class that is designed in its own way, to fit its own purpose.
+The purpose, the design and the implementation of the methods and their
 surrounding code structures is key to understand the choices and
 decisions made when writing the code.
 
-Whenever your share a piece of code with reviewers, always attach a
-description of its context. Explain what problem does the code solves,
+When you share a piece of code with reviewers, attach a
+description of its context. Explain what problem the code solves,
 and how it solves it. Make clear the constraints you had to work with.
 If the code is part of a larger codebase, describe how it fits within
 the bigger logic and explicit the relationships with other parts that
