@@ -45,6 +45,9 @@ use it or are used by it.
 > your code by email, make sure to share the relevant files and clearly
 > identify the version you are sharing.
 
+![To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand side](/dev-review/images/github_permalink.png "To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand sise. Most development platforms can generate links to a particular line, for a particular revision.")
+
+
 > callout here about diff workflows "merge workflow", "github workflow"
 
       - If you are going down an async review route, then providing the reviewer with a merge/pull request will be very helpful here
