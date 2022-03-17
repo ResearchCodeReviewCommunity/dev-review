@@ -63,14 +63,38 @@ use it or are used by it.
 
 ## Reviewer reviews code
 
-1. Reviewer reminds themselves of objectives and areas of focus from first meeting (link to Meet and Agree on Objectives section)
+What should you do if you're the reviewer, 
+providing feedback on someone else's code?
+We suggest a workflow with two key elements.
+First of all, keep the authors' objectives in mind.
+To achieve this, begin your review by 
+refreshing your memory about 
+what you and the author discussed when you met initially. 
+The second key element is to have a checklist.
+We provide such a checklist here: 
+https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md.
+Of course, no checklist can perfectly capture 
+all the dimensions of research code review. 
+Our goal in providing a checklist is to 
+give beginners somewhere to start, 
+and to help experts keep in mind 
+what common issues are that frequently need attention.
+As you work through the checklist, 
+make notes for the meeting you and the author will have 
+after your review.
+You will probably find, as you go through the exercise 
+of outlining some notes, that there are one or two key points 
+you will want to talk about with the author.
+These key points can form the focus for when you and the author meet, 
+as described in the next section.
+
+<!--
 1. Reviewer consults guidelines/checklist for advice about how to evaluate the code
     - Create a distinct page "Reviewer Guidelines" that gives the highlights from the resources we have collected, and then link to those resources
     - Provide a very high level summary of the subject headings here
     - OxCRN guidelines: https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md
     - maybe also http://carver.cs.ua.edu/Slides/2019/URSSI-WinterSchool/URSSI-WinterSchool-PeerCodeReview.pdf (Jeff is part of community, probably happy to share)
-4. Reviewer makes notes for future discussion on code segment in light of the above two points
-    - this is not meant to be in depth (~ 20 minutes)
+-->
 
 ## Author and reviewer meet
 - key points:
