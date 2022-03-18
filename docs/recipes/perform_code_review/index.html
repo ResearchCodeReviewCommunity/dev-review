@@ -6,8 +6,7 @@
         <meta name="robots" content="noodp" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
-<meta property="og:description" content="Perform code review Code author communicates code and context   Author selects an appropriate segment of code
- Pick a snippet you estimate can be reivewed in about 30 minutes. We suggest picking a piece of code that is 50-100 lines. If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment Choice is helped by objectvies from MAO stage." />
+<meta property="og:description" content="Perform code review Code author communicates code and context  Author selects an appropriate segment of code  Pick a snippet you estimate can be reivewed in about 30 minutes. We suggest picking a piece of code that is 50-100 lines. If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment Choice is helped by objectvies from MAO stage." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/recipes/perform_code_review/" /><meta property="article:section" content="recipes" />
 
@@ -15,8 +14,7 @@
 
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
-<meta name="twitter:description" content="Perform code review Code author communicates code and context   Author selects an appropriate segment of code
- Pick a snippet you estimate can be reivewed in about 30 minutes. We suggest picking a piece of code that is 50-100 lines. If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment Choice is helped by objectvies from MAO stage."/>
+<meta name="twitter:description" content="Perform code review Code author communicates code and context  Author selects an appropriate segment of code  Pick a snippet you estimate can be reivewed in about 30 minutes. We suggest picking a piece of code that is 50-100 lines. If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment Choice is helped by objectvies from MAO stage."/>
 <meta name="application-name" content="dev-review">
 <meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +27,7 @@
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/perform_code_review\/"
-        },"genre": "recipes","wordcount":  1130 ,
+        },"genre": "recipes","wordcount":  1338 ,
         "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/perform_code_review\/","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -77,8 +75,7 @@
                 <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster"></h1><div class="content" id="content"><h1 id="perform-code-review">Perform code review</h1>
 <h2 id="code-author-communicates-code-and-context">Code author communicates code and context</h2>
 <ol>
-<li>
-<p>Author selects an appropriate segment of code</p>
+<li>Author selects an appropriate segment of code
 <ul>
 <li>Pick a snippet you estimate can be reivewed in about 30 minutes.</li>
 <li>We suggest picking a piece of code that is 50-100 lines.</li>
@@ -91,30 +88,52 @@
 </li>
 </ul>
 </li>
-<li>
-<p>Author shares the code through an appropriate medium</p>
-<ul>
-<li>When sharing the code snippet before meeting to review, the author should provide local context for the code selected
-<ul>
-<li>the <strong>overall</strong> context and structure of your code will be discussed at the <a href="meet_and_agree_on_objectives.md" rel="">Meet and Agree on Objectives stage</a></li>
-<li>e.g. For instance if you share a couple of class methods, it&rsquo;s useful for a reviewer to know about the class itself, its purpose, design and structure. Then how do the functions fit within the class and interact with each other.</li>
-</ul>
-</li>
-</ul>
-</li>
 </ol>
-<ul>
-<li>We recommend writing up this information in a short blurb and sending it to your reviewer in the same email or message where you share a link to the code itself (next step)</li>
-</ul>
+<p>It&rsquo;s a good idea to share the code to review with the reviewer ahead
+of the review meeting. This gives an opportunity for the reviewer to
+explore the code at their own pace and form independent
+opinions. Prior exposure to the code will also make it easier for
+them to navigate the code during the review itself.</p>
+<p>To get the most out of the review, you as the author of the code
+will also want to help the reviewer understand
+how the particular snippet you select fits into the overall code.
+This helps the reviewer provide relevant comments
+and constructive feedback.
+As an illustration, picture the case where the code under review consists of
+a couple methods belonging to a class. The methods were implemented for a
+specific purpose, and they might interact in a specific way.
+The methods also play particular role within the class
+itself, a class that is designed in its own way, to fit its own purpose.
+The purpose, the design and the implementation of the methods and their
+surrounding code structures is key to understand the choices and
+decisions made when writing the code.</p>
+<p>When you share a piece of code with reviewers, attach a
+description of its context. Explain what problem the code solves,
+and how it solves it. Make clear the constraints you had to work with.
+If the code is part of a larger codebase, describe how it fits within
+the bigger logic and explicit the relationships with other parts that
+use it or are used by it.</p>
 <blockquote>
-<p>this should be a callout &ldquo;How to Share Code&rdquo;</p>
+<p><strong>How to share code?</strong>
+Ideally, revisions of your research software should be available from
+development platforms like GitHub, GitLab or Bitbucket. Simply give
+the reviewer a permalink (see figure ??) or a commit SHA-1 and
+relevant line numbers. This is the preferred option as it gives
+reviewers the opporunity to navigate the whole codebase. Another
+option is <a href="https://gist.github.com/" target="_blank" rel="noopener noreffer">GitHub gists</a>. If you send
+your code by email, make sure to share the relevant files and clearly
+identify the version you are sharing.</p>
 </blockquote>
-<ul>
-<li>We strongly recommend that you use a version control platform (like GitHub.com or GitLab.com) to share your code
-- Not only are these the locations where most code review happens, but they also gives your reviewer the opportunity to poke around the rest of your codebase should they need some broader context.
-- This will require the repository to be open, or perhaps you can give temporary permission to the reviewer if it is private
-- Share the URL to your file and the relevant line numbers you would like reviewed</li>
-</ul>
+<p><figure><a class="lightgallery" href="/dev-review/images/github_permalink.png" title="To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand side" data-thumbnail="/dev-review/images/github_permalink.png" data-sub-html="<h2>To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand sise. Most development platforms can generate links to a particular line, for a particular revision.</h2><p>To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand side</p>">
+        <img
+            class="lazyload"
+            src="/dev-review/svg/loading.min.svg"
+            data-src="/dev-review/images/github_permalink.png"
+            data-srcset="/dev-review/images/github_permalink.png, /dev-review/images/github_permalink.png 1.5x, /dev-review/images/github_permalink.png 2x"
+            data-sizes="auto"
+            alt="/dev-review/images/github_permalink.png" />
+    </a><figcaption class="image-caption">To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand sise. Most development platforms can generate links to a particular line, for a particular revision.</figcaption>
+    </figure></p>
 <blockquote>
 <p>callout here about diff workflows &ldquo;merge workflow&rdquo;, &ldquo;github workflow&rdquo;</p>
 </blockquote>
