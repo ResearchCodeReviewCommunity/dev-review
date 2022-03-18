@@ -43,7 +43,7 @@ use it or are used by it.
 > the reviewer a permalink (see figure ??) or a commit SHA-1 and
 > relevant line numbers. This is the preferred option as it gives
 > reviewers the opporunity to navigate the whole codebase. Another
-> option is [GitHub gists](https://gist.github.com/). If you send share
+> option is [GitHub gists](https://gist.github.com/). If you send
 > your code by email, make sure to share the relevant files and clearly
 > identify the version you are sharing.
 
