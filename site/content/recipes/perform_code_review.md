@@ -10,19 +10,45 @@
       - TODO add examples: e.g. if coding style is reviewed, pick recently added class or method. The more representative of the codebase the snippet is, the more widely relevant the feedback.
       - Author should be familiar with the details of the chosen snippet. The main idea here is to come prepared.
 
-1. Author shares the code through an appropriate medium
-   - When sharing the code snippet before meeting to review, the author should provide local context for the code selected
-      - the **overall** context and structure of your code will be discussed at the [Meet and Agree on Objectives stage](meet_and_agree_on_objectives.md)
-      - e.g. For instance if you share a couple of class methods, it's useful for a reviewer to know about the class itself, its purpose, design and structure. Then how do the functions fit within the class and interact with each other.
+It's a good idea to share the code to review with the reviewer ahead
+of the review meeting. This gives an opportunity for the reviewer to
+explore the code at their own pace and form independent
+opinions. Prior exposure to the code will also make it easier for
+them to navigate the code during the review itself.
 
-- We recommend writing up this information in a short blurb and sending it to your reviewer in the same email or message where you share a link to the code itself (next step)
+To get the most out of the review, you as the author of the code
+will also want to help the reviewer understand
+how the particular snippet you select fits into the overall code.
+This helps the reviewer provide relevant comments
+and constructive feedback.
+As an illustration, picture the case where the code under review consists of
+a couple methods belonging to a class. The methods were implemented for a
+specific purpose, and they might interact in a specific way.
+The methods also play particular role within the class
+itself, a class that is designed in its own way, to fit its own purpose.
+The purpose, the design and the implementation of the methods and their
+surrounding code structures is key to understand the choices and
+decisions made when writing the code.
 
-> this should be a callout "How to Share Code"
+When you share a piece of code with reviewers, attach a
+description of its context. Explain what problem the code solves,
+and how it solves it. Make clear the constraints you had to work with.
+If the code is part of a larger codebase, describe how it fits within
+the bigger logic and explicit the relationships with other parts that
+use it or are used by it.
 
-- We strongly recommend that you use a version control platform (like GitHub.com or GitLab.com) to share your code
-      - Not only are these the locations where most code review happens, but they also gives your reviewer the opportunity to poke around the rest of your codebase should they need some broader context.
-      - This will require the repository to be open, or perhaps you can give temporary permission to the reviewer if it is private
-      - Share the URL to your file and the relevant line numbers you would like reviewed
+> **How to share code?**
+> Ideally, revisions of your research software should be available from
+> development platforms like GitHub, GitLab or Bitbucket. Simply give
+> the reviewer a permalink (see figure ??) or a commit SHA-1 and
+> relevant line numbers. This is the preferred option as it gives
+> reviewers the opporunity to navigate the whole codebase. Another
+> option is [GitHub gists](https://gist.github.com/). If you send
+> your code by email, make sure to share the relevant files and clearly
+> identify the version you are sharing.
+
+![To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand side](/dev-review/images/github_permalink.png "To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand sise. Most development platforms can generate links to a particular line, for a particular revision.")
+
 
 > callout here about diff workflows "merge workflow", "github workflow"
 
