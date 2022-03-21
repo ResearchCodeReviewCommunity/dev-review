@@ -117,8 +117,8 @@ First of all, keep the authors' objectives in mind.
 To achieve this, begin your review by refreshing your memory about what you and
 the author discussed when you met initially.
 The second key element is to work from a checklist.
-[This is a checklist that we recommend](https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md),
-and we also provide additional resources [here](../refs-related.md).
+We provide a checklist [here](../guidelines/points-to-check-for-reviewers.md).
+Please see also the additional resources on the [References and Related Work](../refs-related.md) page.
 Of course, no checklist can perfectly capture all the dimensions of research
 code review.
 Our goal in providing a checklist is to give beginners somewhere to start, and
