@@ -83,14 +83,55 @@ use it or are used by it.
 
 ## Reviewer reviews code
 
-1. Reviewer reminds themselves of objectives and areas of focus from first meeting (link to Meet and Agree on Objectives section)
-1. Reviewer consults guidelines/checklist for advice about how to evaluate the code
-    - Create a distinct page "Reviewer Guidelines" that gives the highlights from the resources we have collected, and then link to those resources
-    - Provide a very high level summary of the subject headings here
-    - OxCRN guidelines: https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md
-    - maybe also http://carver.cs.ua.edu/Slides/2019/URSSI-WinterSchool/URSSI-WinterSchool-PeerCodeReview.pdf (Jeff is part of community, probably happy to share)
-4. Reviewer makes notes for future discussion on code segment in light of the above two points
-    - this is not meant to be in depth (~ 20 minutes)
+Code review can seem intimidating, even for the reviewer. 
+Where do you even start? What do you look at? 
+The good news is: there are a number of points that are almost always worth looking at. 
+In particular, readability is often a good place from which to start a code review. 
+You can start simple, for instance looking at variables' and functions' names: are they explicit? 
+Do they carry intent? As you get more and more familiar with the code under review, 
+move on to larger structure: can some of the functions be split into several functions? 
+Do you see any complex conditional statements that you find hard to read? 
+Eventually, perhaps after several iterations of the code review process, 
+you may be able to criticise the code design, 
+for instance its modules and the relationships between them. But don't start from there!
+
+As discussed in the Meet and Agree on objectives phase, however, 
+code reviews are most effective when a clear goal is set. 
+This goal can help you as a reviewer to orient your feedback, 
+and focus on what matters from the point of view of this overall objective. 
+It is also good practice to calibrate your review for the author, 
+keeping in mind their programing experience. 
+For instance, if the code review aims at assessing readability in general, 
+and you knew that the code author has limited experience, 
+you would want to pay attention to variable and function names, 
+parameter lists, complex conditionals, or lengthy functions. 
+It would probably be best to keep away from suggesting using the latest and greatest features of the language. 
+If the review is about writing more idiomatic code, however, 
+the focus changes to looking specifically at how the code under review 
+makes use of the language it is written in.
+
+Given the unique goals that researchers have when writing code, 
+and the existing good practices for code review developed across industry and academia, 
+we suggest a workflow with two key elements.
+First of all, keep the authors' objectives in mind.
+To achieve this, begin your review by refreshing your memory about what you and
+the author discussed when you met initially.
+The second key element is to work from a checklist.
+[This is a checklist that we recommend](https://github.com/OxfordCodeReviewNet/forum/blob/master/guidelines_for_reviewers.md),
+and we also provide additional resources [here](../refs-related.md).
+Of course, no checklist can perfectly capture all the dimensions of research
+code review.
+Our goal in providing a checklist is to give beginners somewhere to start, and
+to help experts keep in mind what common issues are that frequently need
+attention.
+As you work through the checklist, 
+make notes you can refer to during the review meeting and perhaps share
+with the author afterwards. 
+You will probably find, as you go through the exercise of outlining some notes,
+that there are one or two key points you will want to talk about with the
+author.
+These key points can form the focus for when you and the author meet, as
+described in the next section.
 
 ## Author and reviewer meet
 - key points:
