@@ -2,15 +2,35 @@
 
 ## Code author communicates code and context
 
-1. Author selects an appropriate segment of code
-    - Pick a snippet you estimate can be reivewed in about 30 minutes.
-    - We suggest picking a piece of code that is 50-100 lines.
-    - If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment
-    - Choice is helped by objectvies from MAO stage.
-      - TODO add examples: e.g. if coding style is reviewed, pick recently added class or method. The more representative of the codebase the snippet is, the more widely relevant the feedback.
-      - Author should be familiar with the details of the chosen snippet. The main idea here is to come prepared.
+The first step initiating the actual code review phase is for the code author to
+select a segment of their code to be reviewed. The success and impact of the code
+review will depend, to some degree, on how appropriate the selected segment is,
+so it warrants some consideration from the code author. Here are some points to
+keep in mind when selecting your code segment.
 
-It's a good idea to share the code to review with the reviewer ahead
+- Your choice should address the objectives set at the [Meet and Agree on
+  Objectives step](../meet_and_agree_on_objectives). For example, if you want to
+  get feedback on the style of your code, picking _recent additions_ to the code
+  will be more reflective of your own style rather than portions that you have
+  _amended_, since they might have been originally written by someone else.
+  Alternatively, if you want a general overview of the readability of your code,
+  pick a snippet that shares characteristics with many other areas of the code
+  base so that the feedback on this particular snippet can be extrapolated more
+  broadly. This applies in general: the more representative of the codebase the
+  snippet is, the more widely relevant the feedback.
+- We recommend selecting a snippet of code that is between **50 and 100 lines long**
+  in total, and no longer than 200 lines. There is clear evidence from the
+  literature of industry studies that the quality and impact of code review
+  declines rapidly as the length of the code to review increases. We also make
+  this recommendation from personal experience; you probably have had the
+  experience yourself of being amazed at how long it takes to decipher even a
+  single line of code! These numbers can be flexed depending on how familiar the
+  reviewer is with your code: the less familiar, the less code you should
+  select.
+- As the author, you should be familiar with this segment of code. Don't select
+  something that your yourself don't understand.
+
+Next, it's a good idea to share the code to review with the reviewer ahead
 of the review meeting. This gives an opportunity for the reviewer to
 explore the code at their own pace and form independent
 opinions. Prior exposure to the code will also make it easier for
