@@ -66,7 +66,7 @@ use it or are used by it.
 Code review can seem intimidating, even for the reviewer. 
 Where do you even start? What do you look at? 
 The good news is: there are a number of points that are almost always worth looking at. 
-In particular, the readability is often a good place from which to start a code review. 
+In particular, readability is often a good place from which to start a code review. 
 You can start simple, for instance looking at variables' and functions' names: are they explicit? 
 Do they carry intent? As you get more and more familiar with the code under review, 
 move on to larger structure: can some of the functions be split into several functions? 
