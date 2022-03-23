@@ -3,8 +3,7 @@
 ## Code author communicates code and context
 
 The first step initiating the actual code review phase is for the code author to
-select a segment of their code to be reviewed. This sounds obvious and perhaps
-even easy, but it can be quite a tricky task. The success and impact of the code
+select a segment of their code to be reviewed. The success and impact of the code
 review will depend, to some degree, on how appropriate the selected segment is,
 so it warrants some consideration from the code author. Here are some points to
 keep in mind when selecting your code segment.
