@@ -54,7 +54,7 @@ Steps  If they have some, reviewer(s) state their expectation for the code revie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/perform_code_review/</guid>
-      <description>Perform code review Code author communicates code and context  Author selects an appropriate segment of code  Pick a snippet you estimate can be reivewed in about 30 minutes. We suggest picking a piece of code that is 50-100 lines. If the code you plan to review is larger than that, agree on a strategy to sequentially go through smaller segments, or prioritise the most important segment Choice is helped by objectvies from MAO stage.</description>
+      <description>Perform code review Code author communicates code and context The first step initiating the actual code review phase is for the code author to select a segment of their code to be reviewed. The success and impact of the code review will depend, to some degree, on how appropriate the selected segment is, so it warrants some consideration from the code author. Here are some points to keep in mind when selecting your code segment.</description>
     </item>
     
     <item>
