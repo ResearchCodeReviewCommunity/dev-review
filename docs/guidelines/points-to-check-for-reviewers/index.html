@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
+<meta property="og:description" content="Major points for reviewers to check in a code review Adapted from the Oxford Code Review Net under CC BY-SA 4.0 License.
+Reviewing code can be intimidating, especially if you don&rsquo;t consider yourself as an experienced programmer. What if you don&rsquo;t find anything to say?
+Simply ask questions It is a common misconception to think that reviewers must necessarily be advanced developers, and that they must find bugs or make tons of comments for the review to be successful." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/guidelines/points-to-check-for-reviewers/" /><meta property="article:section" content="guidelines" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="Major points for reviewers to check in a code review Adapted from the Oxford Code Review Net under CC BY-SA 4.0 License.
+Reviewing code can be intimidating, especially if you don&rsquo;t consider yourself as an experienced programmer. What if you don&rsquo;t find anything to say?
+Simply ask questions It is a common misconception to think that reviewers must necessarily be advanced developers, and that they must find bugs or make tons of comments for the review to be successful."/>
+<meta name="application-name" content="dev-review">
+<meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://researchcodereviewcommunity.github.io/dev-review/guidelines/points-to-check-for-reviewers/" /><link rel="next" href="https://researchcodereviewcommunity.github.io/dev-review/guidelines/approach/" /><link rel="stylesheet" href="/dev-review/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/dev-review/css/style.min.css"><link rel="stylesheet" href="/dev-review/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dev-review/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/guidelines\/points-to-check-for-reviewers\/"
+        },"genre": "guidelines","wordcount":  1472 ,
+        "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/guidelines\/points-to-check-for-reviewers\/","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/dev-review/dev-review/posts/"> Posts </a><a class="menu-item" href="/dev-review/dev-review/tags/"> Tags </a><a class="menu-item" href="/dev-review/dev-review/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/dev-review/dev-review/posts/" title="">Posts</a><a class="menu-item" href="/dev-review/dev-review/tags/" title="">Tags</a><a class="menu-item" href="/dev-review/dev-review/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster"></h1><div class="content" id="content"><h1 id="major-points-for-reviewers-to-check-in-a-code-review">Major points for reviewers to check in a code review</h1>
+<p>Adapted from the <a href="https://github.com/OxfordCodeReviewNet/forum" target="_blank" rel="noopener noreffer">Oxford Code Review Net</a> under <a href="https://github.com/OxfordCodeReviewNet/forum/blob/master/LICENSE" target="_blank" rel="noopener noreffer">CC BY-SA 4.0 License</a>.</p>
+<p>Reviewing code can be intimidating, especially if you don&rsquo;t consider yourself as an experienced programmer.
+What if you don&rsquo;t find anything to say?</p>
+<h2 id="simply-ask-questions">Simply ask questions</h2>
+<p>It is a common misconception to think that reviewers must necessarily be advanced developers, and that they must find bugs or make tons of comments for the review to be successful.</p>
+<p>Instead, your main job as a reviewer is <strong>simply to ask questions</strong>. This should be easy, as it is unlikely that you will understand every line of code without explanation.
+You first goal as a reviewer is to force the code author to explain their code to you in detail. Doing so, they will very probably identify bugs and area of improvements <strong>themselves</strong>.</p>
+<p>Once you&rsquo;re comfortable reading somebody else&rsquo;s code and asking questions about it, the next step is to look for potential issues yourself.
+If you have no idea what to look for, here is a list of the major points to check in a code review.</p>
+<h2 id="what-to-look-for-as-a-reviewer">What to look for as a reviewer</h2>
+<p><em>Under construction</em></p>
+<p>The following points are common guidelines, not rules. Cases may arise where it is best not to follow them.</p>
+<ol>
+<li><a href="#naming" rel="">Naming</a></li>
+<li><a href="#duplicated" rel="">Duplicated code</a></li>
+<li><a href="#long" rel="">Long functions</a></li>
+<li><a href="#complexity" rel="">Complex if statements</a></li>
+<li><a href="#obscure" rel="">Obscure lines</a></li>
+<li><a href="#unintended" rel="">Unintended behaviour</a></li>
+<li><a href="#comments" rel="">Comments</a></li>
+<li><a href="#performance" rel="">Performance low hanging fruits</a></li>
+<li><a href="#builtin" rel="">Potential use of built-in functions</a></li>
+<li><a href="#third-party" rel="">Potential use of third-party libraries</a></li>
+</ol>
+<h3 id="code-style">Code style</h3>
+<p>Whatever the programming language, there is usually a style guide, or set of best practices, to follow:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">Language</th>
+<th style="text-align:center">Style guide</th>
+<th style="text-align:center">Tool</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Python</td>
+<td style="text-align:center">PEP8</td>
+<td style="text-align:center">pycodestyle</td>
+</tr>
+<tr>
+<td style="text-align:center">C++</td>
+<td style="text-align:center">LLVM style guide, Mozilla style guide&hellip;</td>
+<td style="text-align:center">clang-format</td>
+</tr>
+<tr>
+<td style="text-align:center">R</td>
+<td style="text-align:center">Hadley Wickham&rsquo;s style guide</td>
+<td style="text-align:center">lintr</td>
+</tr>
+<tr>
+<td style="text-align:center">JavaScript</td>
+<td style="text-align:center">JavaScript Standard style</td>
+<td style="text-align:center">JavaScript Standard style</td>
+</tr>
+<tr>
+<td style="text-align:center">Fortran</td>
+<td style="text-align:center">Fortran Best Practices</td>
+<td style="text-align:center">gfortran</td>
+</tr>
+<tr>
+<td style="text-align:center">Ruby</td>
+<td style="text-align:center">Ruby Style Guide</td>
+<td style="text-align:center">RuboCop</td>
+</tr>
+<tr>
+<td style="text-align:center">Go</td>
+<td style="text-align:center">Effective Go</td>
+<td style="text-align:center">gofmt</td>
+</tr>
+<tr>
+<td style="text-align:center">Julia</td>
+<td style="text-align:center">The Julia Style Guide</td>
+<td style="text-align:center">??</td>
+</tr>
+</tbody>
+</table>
+<p>Following a style guide makes sure that your code is written in a way that is consistent with code written
+by other programmers (assuming they also follow the same style guide).</p>
+<ul>
+<li>You code will be easier to read and understand for programmers outside your project.</li>
+<li>Code style will be consistent throughout the project even if several developers are working on it.</li>
+<li>Style guides are based on best practices for the language.</li>
+</ul>
+<p>Style guides are well worth the read, but often are lengthy and (sometimes) obscure. Luckily, there are many
+software tools to enforce style guides automatically (see table above).</p>
+<blockquote>
+<p>It&rsquo;s likely that there are several style guides available for your favourite language. For instance, pretty
+much every web company have their own JavaScript style guide. However, one style guide often
+dominates and is used by most of the community (C++ is a notable exception). This is the one you should probably use!</p>
+</blockquote>
+<p><a id="naming"></a></p>
+<h3 id="naming">Naming</h3>
+<p>Often the hardest part in software development.</p>
+<ul>
+<li>Always use descriptive names at every level, whether it is for variables, functions/methods or classes. Name of functions, subroutines, and classes should convey intent.</li>
+</ul>
+<blockquote>
+<p>Tip: When implementing mathematical expressions, it&rsquo;s often tempting to name the variable after its mathematical symbol (e.g. <code>alpha</code>, <code>m</code>, <code>R0</code>..).
+This is not recommended, as this makes the code less readable, and other people may use different notations. Use explicit names instead
+(e.g. <code>streamwise_velocity_field</code>, <code>current</code>, <code>infection_rate</code>&hellip;)</p>
+</blockquote>
+<ul>
+<li>Avoid &ldquo;magic numbers&rdquo;:</li>
+</ul>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="mi">26</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</code></pre></div><p>should be instead</p>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="kt">int</span> <span class="n">AlphabetSize</span> <span class="o">=</span> <span class="mi">26</span><span class="p">;</span>
+<span class="k">for</span> <span class="p">(</span><span class="n">i</span><span class="o">=</span><span class="mi">0</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">AlphabetSize</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">){</span>
+</code></pre></div><p><a href="https://dev.to/designpuddle/code-review-checklist-14ke" target="_blank" rel="noopener noreffer">See this post by Chris Bertrand</a>.</p>
+<blockquote>
+<p>Don&rsquo;t hesitate to use long variable names. All good text editors provide
+<a href="https://en.wikipedia.org/wiki/Autocomplete" target="_blank" rel="noopener noreffer">autocompletion</a>, which will save you from typing the whole
+of your variables' name.</p>
+</blockquote>
+<p><a id="duplicated"></a></p>
+<h3 id="duplicated-code">Duplicated code</h3>
+<p>Copy-pasting code may speed up development in the short term&hellip; <strong>but</strong></p>
+<ul>
+<li>It cripples the code&rsquo;s maintainability and extensibility (either by a colleague or yourself three months down the line).</li>
+<li>Each time you modify a part, you have to remember to modify all duplicated parts without forgetting any. Not only it is boring work, but is also error prone.</li>
+<li>Duplicated code also decreases readability, as your code is unnecessarily longer, and makes bug hunting much harder.</li>
+</ul>
+<p>Typical alternatives to duplicated code include:</p>
+<ul>
+<li>Definition of new functions/methods that can be reused in different parts of the code</li>
+<li>Use of Object Oriented approaches like class inheritance or composition.</li>
+</ul>
+<p><a id="complex"></a></p>
+<h3 id="complex-if-statements">Complex <code>if</code> statements</h3>
+<p>Complex <code>if</code> statements make your code much less readable, as it forces the reader to hold and process a lot
+of information simultaneously.</p>
+<p>As an example, the following <code>if</code> statement determines if a point <code>(x,y)</code> is contained inside a rectangle:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python">    <span class="k">if</span> <span class="p">(</span><span class="n">x</span> <span class="o">&gt;</span> <span class="n">xmin</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">xmax</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="n">ymin</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">ymax</span><span class="p">):</span>
+</code></pre></div><p>The above complex condition can be replaced by a function call:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">is_inside_rectangle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+    <span class="n">x_in</span> <span class="o">=</span> <span class="n">x</span> <span class="o">&gt;</span> <span class="n">xmin</span> <span class="ow">and</span> <span class="n">x</span> <span class="o">&lt;</span> <span class="n">xmax</span>
+    <span class="n">y_in</span> <span class="o">=</span> <span class="n">y</span> <span class="o">&gt;</span> <span class="n">ymin</span> <span class="ow">and</span> <span class="n">y</span> <span class="o">&lt;</span> <span class="n">ymax</span>
+
+    <span class="k">return</span> <span class="n">x_in</span> <span class="ow">and</span> <span class="n">y_in</span>
+
+<span class="c1"># ...</span>
+<span class="k">if</span> <span class="n">is_inside_rectangle</span><span class="p">(</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">):</span>
+</code></pre></div><p>Another common problematic constructs are nested <code>if-else</code> statements:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">nb_of_events</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">events</span><span class="p">)</span>
+<span class="k">if</span> <span class="n">nb_of_events</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+    <span class="n">list_of_available_events</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">else</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">events_subsequent</span><span class="p">:</span>
+        <span class="n">list_of_available_events</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">else</span><span class="p">:</span>
+        <span class="n">list_of_available_events</span> <span class="o">=</span> <span class="p">[]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb_of_events</span><span class="p">):</span>
+            <span class="n">list_of_available_events</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</code></pre></div><p>The above can be better written, using guard clauses, as:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">get_list_of_available_events</span><span class="p">(</span><span class="n">events</span><span class="p">,</span> <span class="n">events_subsequent</span><span class="p">):</span>
+    <span class="n">nb_of_events</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">events</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">nb_of_events</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[]</span>
+    <span class="k">if</span> <span class="n">events_subsequent</span><span class="p">:</span>
+        <span class="k">return</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+    <span class="k">return</span> <span class="nb">range</span><span class="p">(</span><span class="n">nb_of_events</span><span class="p">)</span>
+
+<span class="n">list_of_available_events</span> <span class="o">=</span> <span class="n">get_list_of_available_events</span><span class="p">()</span>
+</code></pre></div><p>Complex <code>if</code> statements and nested <code>if-else</code> significantly hinder readability.
+They also make your code much harder to test, as you&rsquo;ll have to write a test for each possible branch
+in your code.</p>
+<p>See the notions of <a href="https://docs.codeclimate.com/docs/cyclomatic-complexity" target="_blank" rel="noopener noreffer">cyclomatic complexity</a> and
+<a href="https://docs.codeclimate.com/docs/cognitive-complexity" target="_blank" rel="noopener noreffer">cognitive complexity</a>.
+See also <a href="https://youtu.be/dqdsNoApJ80?t=303" target="_blank" rel="noopener noreffer">Writing simpler and more maintainable Python by Anthony Shaw (video)</a></p>
+<p><a id="long"></a></p>
+<h3 id="long-functionsmethods">Long functions/methods</h3>
+<ul>
+<li>Functions should be as short as possible.
+Readability an modularity.</li>
+<li>Functions should do one thing.
+Facilitates testing.</li>
+</ul>
+<p><a id="obscure"></a></p>
+<h3 id="obscure-lines">Obscure lines</h3>
+<p>Modern programming language such as Python, Ruby or even modern C++ provide powerful functionality to allow
+programmers to do more whilst typing less. Although these can lead to shorter and more descriptive code, it is a double-edged sword.</p>
+<p>Consider the following line of python</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">for</span> <span class="n">ensemble</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="p">[</span><span class="n">traj_sample</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nsamples</span><span class="p">)]):</span>
+</code></pre></div><p>The above line relies on</p>
+<ul>
+<li>A generator function call</li>
+<li>List comprehension</li>
+<li>List unpacking</li>
+<li>The <code>zip</code> built-in function</li>
+</ul>
+<p>That&rsquo;s a lot. Although this is nice and short, this is difficult to read. Similarly to mathematical proofs, doing too much in one step makes the argument harder to follow.</p>
+<p>In the above, simply adding an extra line allows you to use a descriptive intermediate variable:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="n">list_of_generators</span> <span class="o">=</span> <span class="p">[</span><span class="n">traj_sample</span><span class="p">(</span><span class="n">x0</span><span class="p">,</span> <span class="n">t0</span><span class="p">,</span> <span class="o">*</span><span class="n">args</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">)</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">nsamples</span><span class="p">)]</span>
+<span class="k">for</span> <span class="n">ensemble</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="o">*</span><span class="n">list_of_generators</span><span class="p">):</span>
+</code></pre></div><p>Resist clever one-liners!</p>
+<p><a id="unintended"></a></p>
+<h3 id="unintended-behaviour">Unintended behaviour</h3>
+<p>A typical example is a function with parameters that are constrained (e.g. strictly positive, integer value&hellip;).
+The following C function is compiled without errors:</p>
+<div class="highlight"><pre class="chroma"><code class="language-C" data-lang="C"><span class="kt">double</span> <span class="nf">returnArrayElement</span><span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">,</span> <span class="kt">double</span> <span class="o">*</span><span class="n">array</span><span class="p">){</span>
+
+  <span class="k">return</span> <span class="n">array</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+
+<span class="p">}</span>
+</code></pre></div><p>However, if <code>i</code> is negative, or larger than the total allocated size of <code>array</code>, executing the code may result in a Segmentation Fault.</p>
+<blockquote>
+<p>Code should not trust its user, whether the user is a human or some other code.</p>
+</blockquote>
+<p>The corollary to the above statement is a programming style known as <a href="https://swcarpentry.github.io/python-novice-inflammation/10-defensive/index.html" target="_blank" rel="noopener noreffer">defensive programming</a>.</p>
+<p>Example of a defensive python function:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">compute_acceleration</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">total_force_on_body</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">mass</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;Mass of body must be strictly positive&#34;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">total_force_on_body</span><span class="o">/</span><span class="n">mass</span>
+</code></pre></div><p><a id="documented"></a></p>
+<h3 id="undocumented-functions-classes-and-modules">Undocumented functions, classes and modules</h3>
+<p>Any logical structure (function, class, module) should be accompanied by a documentation string (commonly known as <em>docstring</em>).</p>
+<p>Example:</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">compute_acceleration</span><span class="p">(</span><span class="n">mass</span><span class="p">,</span> <span class="n">total_force_on_body</span><span class="p">):</span>
+    <span class="s2">&#34;&#34;&#34;
+</span><span class="s2">    Compute and return acceleration on body, according to Newton&#39;s 2nd law
+</span><span class="s2">
+</span><span class="s2">    Parameters
+</span><span class="s2">    ----------
+</span><span class="s2">    mass: float
+</span><span class="s2">      Mass of body
+</span><span class="s2">    total_force_on_body: float
+</span><span class="s2">      Sum of all forces exerted on the body
+</span><span class="s2">
+</span><span class="s2">    Returns:
+</span><span class="s2">    --------
+</span><span class="s2">    a: float
+</span><span class="s2">      The acceleration
+</span><span class="s2">    &#34;&#34;&#34;</span>
+    <span class="k">if</span> <span class="n">mass</span> <span class="o">&lt;=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="k">raise</span> <span class="ne">ValueError</span><span class="p">(</span><span class="s2">&#34;Mass of body must be strictly positive&#34;</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">total_force_on_body</span><span class="o">/</span><span class="n">mass</span>
+
+</code></pre></div><p><a id="comments"></a></p>
+<h3 id="comments">Comments</h3>
+<p>Commenting can be a confusing topic, since the general advice is <em>comment you code, but not too much</em>.
+This can be understood by taking a rather <em>extreme</em> stance:</p>
+<blockquote>
+<p>Good code does not need comments to be understood.</p>
+</blockquote>
+<p>The rationale is that, most of the time, comments can be avoided by using more descriptive names, shorter methods, and simpler constructs.</p>
+<p>Take home message: comments should describe the <em>why</em>, not the <em>what</em>.</p>
+<p><a id="performance"></a></p>
+<h3 id="performance-low-hanging-fruits">Performance low hanging fruits</h3>
+<p>Typical examples include</p>
+<ul>
+<li>Ordering of nested loops</li>
+</ul>
+<p>It is best to access your data in the order it is laid out in memory. In Fortran, this would mean:</p>
+<div class="highlight"><pre class="chroma"><code class="language-fortran" data-lang="fortran"><span class="k">implicit none
+</span><span class="k">
+</span><span class="k">   </span><span class="kt">integer</span><span class="kd">::</span> <span class="n">i</span><span class="p">,</span> <span class="n">j</span>
+
+   <span class="n">jloop</span><span class="p">:</span> <span class="k">do </span><span class="n">j</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">mesh_size_y</span>
+         <span class="n">iloop</span><span class="p">:</span> <span class="k">do </span><span class="n">i</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="n">mesh_size_y</span>
+
+            <span class="c">! Make sure inner column index is first
+</span><span class="c"></span>            <span class="n">a</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="o">=</span> <span class="n">prefactor</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span><span class="o">*</span><span class="p">(</span><span class="n">term1</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">)</span> <span class="o">+</span> <span class="n">term2</span><span class="p">(</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">))</span>
+
+      <span class="k">end do </span><span class="n">iloop</span>
+   <span class="k">end do </span><span class="n">jloop</span>
+</code></pre></div><p>See <a href="https://en.wikipedia.org/wiki/Locality_of_reference" target="_blank" rel="noopener noreffer">data spatial locality</a>).</p>
+<ul>
+<li>Use of local variables</li>
+</ul>
+<p>Reusing recently defined variable is fast, thanks to <a href="https://en.wikipedia.org/wiki/Locality_of_reference" target="_blank" rel="noopener noreffer">data temporal locality</a>.</p>
+<div class="highlight"><pre class="chroma"><code class="language-C++" data-lang="C++"><span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span><span class="p">;</span> <span class="n">i</span><span class="o">&lt;</span><span class="n">stop</span><span class="p">;</span><span class="n">i</span><span class="o">++</span><span class="p">)</span>
+<span class="p">{</span>
+  <span class="n">local_var</span> <span class="o">=</span> <span class="n">vector</span><span class="p">[</span><span class="n">i</span><span class="p">];</span>
+  <span class="n">result</span> <span class="o">=</span> <span class="mf">2.</span><span class="o">*</span><span class="n">local_var</span><span class="o">*</span><span class="n">local_var</span> <span class="o">+</span> <span class="n">local_var</span> <span class="o">+</span> <span class="mf">4.</span>
+  <span class="p">...</span>
+
+</code></pre></div><p><a id="builtin"></a></p>
+<h3 id="potential-use-of-built-in-functions">Potential use of built in functions</h3>
+<p>Do not not reinvent the wheel!</p>
+<p>Programming languages usually come with useful libraries that implement common tasks.</p>
+<div class="highlight"><pre class="chroma"><code class="language-python" data-lang="python"><span class="kn">from</span> <span class="nn">itertools</span> <span class="kn">import</span> <span class="n">accumulate</span>
+
+<span class="n">accumulate</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span> <span class="n">initial</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span> <span class="o">--&gt;</span> <span class="mi">100</span> <span class="mi">101</span> <span class="mi">103</span> <span class="mi">106</span> <span class="mi">110</span> <span class="mi">115</span>
+</code></pre></div><p><a id="third-party"></a></p>
+<h3 id="potential-use-of-third-party-libraries">Potential use of third party libraries</h3>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.85.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/dev-review/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/dev-review/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/dev-review/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/dev-review/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/dev-review/js/theme.min.js"></script></body>
+</html>

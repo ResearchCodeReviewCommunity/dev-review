@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+        <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
+<meta property="og:description" content="How to Have Constructive Code Review Conversations  adapted from a guide by Jeff Carver
+ Many aspects of code review can occur asynchronously, if the software is mature and the scope of the project is clearly defined. Unfortunately, when developing code for research, the software is not mature and the scope is not well understood, or it wouldn&rsquo;t be research. That&rsquo;s why code review in a research setting is much more likely to involve one-on-one, face-to-face conversations." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/guidelines/approach/" /><meta property="article:section" content="guidelines" />
+
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content="How to Have Constructive Code Review Conversations  adapted from a guide by Jeff Carver
+ Many aspects of code review can occur asynchronously, if the software is mature and the scope of the project is clearly defined. Unfortunately, when developing code for research, the software is not mature and the scope is not well understood, or it wouldn&rsquo;t be research. That&rsquo;s why code review in a research setting is much more likely to involve one-on-one, face-to-face conversations."/>
+<meta name="application-name" content="dev-review">
+<meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://researchcodereviewcommunity.github.io/dev-review/guidelines/approach/" /><link rel="prev" href="https://researchcodereviewcommunity.github.io/dev-review/guidelines/points-to-check-for-reviewers/" /><link rel="stylesheet" href="/dev-review/lib/normalize/normalize.min.css"><link rel="stylesheet" href="/dev-review/css/style.min.css"><link rel="stylesheet" href="/dev-review/lib/fontawesome-free/all.min.css"><link rel="stylesheet" href="/dev-review/lib/animate/animate.min.css"><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "",
+        "inLanguage": "en",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/guidelines\/approach\/"
+        },"genre": "guidelines","wordcount":  288 ,
+        "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/guidelines\/approach\/","publisher": {
+            "@type": "Organization",
+            "name": "Author"},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body header-desktop="" header-mobile=""><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : '' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/dev-review/dev-review/posts/"> Posts </a><a class="menu-item" href="/dev-review/dev-review/tags/"> Tags </a><a class="menu-item" href="/dev-review/dev-review/categories/"> Categories </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/dev-review/" title="dev-review"><span class="header-title-pre"><i class="fas fa-code"></i></span>Research Code Review Community</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/dev-review/dev-review/posts/" title="">Posts</a><a class="menu-item" href="/dev-review/dev-review/tags/" title="">Tags</a><a class="menu-item" href="/dev-review/dev-review/categories/" title="">Categories</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw"></i>
+            </a></div>
+    </div>
+</header>
+<div class="search-dropdown desktop">
+    <div id="search-dropdown-desktop"></div>
+</div>
+<div class="search-dropdown mobile">
+    <div id="search-dropdown-mobile"></div>
+</div>
+<main class="main">
+                <div class="container"><div class="page single special"><h1 class="single-title animated pulse faster"></h1><div class="content" id="content"><h1 id="how-to-have-constructive-code-review-conversations">How to Have Constructive Code Review Conversations</h1>
+<blockquote>
+<p>adapted from a <a href="http://carver.cs.ua.edu/Slides/2019/URSSI-WinterSchool/URSSI-WinterSchool-PeerCodeReview.pdf" target="_blank" rel="noopener noreffer">guide</a> by <a href="http://carver.cs.ua.edu" target="_blank" rel="noopener noreffer">Jeff Carver</a></p>
+</blockquote>
+<p>Many aspects of code review can occur asynchronously,
+if the software is mature and the scope of the project is clearly defined.
+Unfortunately, when developing code for research,
+the software is not mature and the scope is not well understood,
+or it wouldn&rsquo;t be research.
+That&rsquo;s why code review in a research setting is much more likely
+to involve one-on-one, face-to-face conversations.
+How can you ensure those conversations are productive?
+Here we provide some key points to keep in mind for both the
+reviewer and the author of the code.</p>
+<h2 id="reviewer">Reviewer</h2>
+<ul>
+<li>Focus on the code, not the author.
+<ul>
+<li>Use &ldquo;I&rdquo; statements (&ldquo;Usually I approach similar situations this way&hellip;&quot;) instead of &ldquo;you&rdquo; statements (&ldquo;You should do this&hellip;&quot;)</li>
+<li>Talk about the code, not the coder</li>
+<li>If you must talk about the coder, talk in terms of behavior (which can change) instead of talking about attributes</li>
+</ul>
+</li>
+<li>Ask questions rather than make statements
+<ul>
+<li>Avoid &ldquo;why&rdquo; questions that sound accusatory (&ldquo;Why would you do this?&quot;)</li>
+</ul>
+</li>
+<li>Accept that there are different solutions</li>
+<li>Pick your battles</li>
+<li>Remember to praise good</li>
+<li>Take your time and do the review well</li>
+</ul>
+<h2 id="author">Author</h2>
+<ul>
+<li>Remember that the goal of code review is to improve the overall code, not evaluate the quality or worth of the developer.
+<ul>
+<li>Remember you are not your code.</li>
+</ul>
+</li>
+<li>Don&rsquo;t be afraid to make mistakes.
+<ul>
+<li>We all make mistakes, that&rsquo;s how we learn.</li>
+</ul>
+</li>
+<li>Keep an open mind.
+<ul>
+<li>Someone else will always know more, its ok, learn from them.</li>
+<li>People bring different perspectives, that&rsquo;s a good thing.</li>
+</ul>
+</li>
+<li>If you feel strongly about a certain approach, than you should of course defend it, but also be willing to compromise. Combatative code reviews won&rsquo;t help anyone.</li>
+</ul>
+</div></div></div>
+            </main><footer class="footer">
+        <div class="footer-container"><div class="footer-line">Powered by <a href="https://gohugo.io/" target="_blank" rel="noopener noreffer" title="Hugo 0.85.0">Hugo</a> | Theme - <a href="https://github.com/dillonzq/LoveIt" target="_blank" rel="noopener noreffer" title="LoveIt 0.2.10"><i class="far fa-kiss-wink-heart fa-fw"></i> LoveIt</a>
+                </div><div class="footer-line"><i class="far fa-copyright fa-fw"></i><span itemprop="copyrightYear">2022</span><span class="author" itemprop="copyrightHolder">&nbsp;<a href="/dev-review/" target="_blank"></a></span></div>
+        </div>
+    </footer></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw"></i>
+            </a>
+        </div><script type="text/javascript" src="/dev-review/lib/smooth-scroll/smooth-scroll.min.js"></script><script type="text/javascript" src="/dev-review/lib/lazysizes/lazysizes.min.js"></script><script type="text/javascript" src="/dev-review/lib/clipboard/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":10},"comment":{}};</script><script type="text/javascript" src="/dev-review/js/theme.min.js"></script></body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Guidelines on dev-review</title>
+    <link>https://researchcodereviewcommunity.github.io/dev-review/guidelines/</link>
+    <description>Recent content in Guidelines on dev-review</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language><atom:link href="https://researchcodereviewcommunity.github.io/dev-review/guidelines/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title></title>
+      <link>https://researchcodereviewcommunity.github.io/dev-review/guidelines/approach/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://researchcodereviewcommunity.github.io/dev-review/guidelines/approach/</guid>
+      <description>How to Have Constructive Code Review Conversations  adapted from a guide by Jeff Carver
+ Many aspects of code review can occur asynchronously, if the software is mature and the scope of the project is clearly defined. Unfortunately, when developing code for research, the software is not mature and the scope is not well understood, or it wouldn&amp;rsquo;t be research. That&amp;rsquo;s why code review in a research setting is much more likely to involve one-on-one, face-to-face conversations.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://researchcodereviewcommunity.github.io/dev-review/guidelines/points-to-check-for-reviewers/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://researchcodereviewcommunity.github.io/dev-review/guidelines/points-to-check-for-reviewers/</guid>
+      <description>Major points for reviewers to check in a code review Adapted from the Oxford Code Review Net under CC BY-SA 4.0 License.
+Reviewing code can be intimidating, especially if you don&amp;rsquo;t consider yourself as an experienced programmer. What if you don&amp;rsquo;t find anything to say?
+Simply ask questions It is a common misconception to think that reviewers must necessarily be advanced developers, and that they must find bugs or make tons of comments for the review to be successful.</description>
+    </item>
+    
+  </channel>
+</rss>

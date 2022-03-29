@@ -5,6 +5,8 @@
             <loc>https://researchcodereviewcommunity.github.io/dev-review/</loc><priority>0</priority></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/flowcharts/high-level/</loc></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/glossary/</loc><priority>0</priority></url><url>
+            <loc>https://researchcodereviewcommunity.github.io/dev-review/guidelines/approach/</loc></url><url>
+            <loc>https://researchcodereviewcommunity.github.io/dev-review/guidelines/points-to-check-for-reviewers/</loc></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/recipes/explain_code_structure/</loc></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/recipes/find_a_reviewer/</loc></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/recipes/lonecoder/</loc></url><url>
@@ -14,5 +16,6 @@
             <loc>https://researchcodereviewcommunity.github.io/dev-review/refs-related/</loc><priority>0</priority></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/categories/</loc></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/flowcharts/</loc></url><url>
+            <loc>https://researchcodereviewcommunity.github.io/dev-review/guidelines/</loc></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/recipes/</loc></url><url>
             <loc>https://researchcodereviewcommunity.github.io/dev-review/tags/</loc></url></urlset>
