@@ -2,7 +2,7 @@
 
 This repository is automatically built from [markdown](https://commonmark.org/) files by [Hugo](https://gohugo.io/) using [GitHub Actions](https://github.com/features/actions).
 This site uses the Hugo [LoveIt](https://hugoloveit.com/) theme.
-This site is available here: https://researchcodereviewcommunity.github.io/
+This site is available here: https://researchcodereviewcommunity.github.io/dev-review/
 
 The following branches in this repository are important: 
 - `main`: the markdown files corresponding to the current live version of the website
