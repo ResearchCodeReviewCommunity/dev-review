@@ -60,9 +60,9 @@ use it or are used by it.
 > **How to share code?**
 > Ideally, revisions of your research software should be available from
 > development platforms like GitHub, GitLab or Bitbucket. Simply give
-> the reviewer a permalink (see figure ??) or a commit SHA-1 and
+> the reviewer a permalink (see figure below) or a commit SHA-1 and
 > relevant line numbers. This is the preferred option as it gives
-> reviewers the opporunity to navigate the whole codebase. Another
+> reviewers the opportunity to navigate the whole codebase. Another
 > option is [GitHub gists](https://gist.github.com/). If you send
 > your code by email, make sure to share the relevant files and clearly
 > identify the version you are sharing.
@@ -71,14 +71,6 @@ use it or are used by it.
 
 
 > callout here about diff workflows "merge workflow", "github workflow"
-
-      - If you are going down an async review route, then providing the reviewer with a merge/pull request will be very helpful here
-    - It might not be possible to share your code openly like this, or you may not be set up with version control yet
-      - in that case, consider using something like [GitHub gists](https://gist.github.com/) to share your code
-      - as a last resort, share your code snippet as an attachement to email or link to a file hosting location
-    - Should be done a few days before the review meeting so that the reviewer has time to look at it. Exact timing should be discussed and MAO.
-    - If your code has a complex environment, it might be desirable to share a containerised version of your code/software through somethign like Binder
-        - mention CODECHECK as perhaps a better option for this kind of higher level check of your code
 
 
 ## Reviewer reviews code
