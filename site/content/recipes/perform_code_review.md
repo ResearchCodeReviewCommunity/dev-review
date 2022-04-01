@@ -116,8 +116,8 @@ First of all, keep the authors' objectives in mind.
 To achieve this, begin your review by refreshing your memory about what you and
 the author discussed when you met initially.
 The second key element is to work from a checklist.
-We provide a checklist [here](../guidelines/points-to-check-for-reviewers.md).
-Please see also the additional resources on the [References and Related Work](../refs-related.md) page.
+We provide a checklist [here](../../guidelines/points-to-check-for-reviewers).
+Please see also the additional resources on the [References and Related Work](../../refs-related) page.
 Of course, no checklist can perfectly capture all the dimensions of research
 code review.
 Our goal in providing a checklist is to give beginners somewhere to start, and
@@ -148,35 +148,66 @@ that there is an alternate technique for code review.
 > review for projects, we feel strongly that researchers with less experience of code
 > review benefit more from the meeting-based approach outlined by this website.
 
-- key points:
-  -  there are two ways to do code review: synchronous/in-person, and asynchronous
-  -  while there is not much existing research, what does exist suggests that for research code review, the process should include face-to-face, synchronous component [Wilson 2015]
-  -  This is because there are such different backgrounds that can go into code review and both the author and reviewer need to make sure they are understanding each other
-- A good way to open up this meeting might be for the author and reviewer to go over the scientific context for the code review
-- Reviewer drives review according to their notes. They discuss the code by giving direct feedback or asking questions challenging the code's design, implementation and documentation.
-- Author responds to reviewer's comments and questions. They describe the structure, explain implementation, justify decisions.
-- Live reviews help build trust and understand the other person's mindset.
-- This is a conversation in which the code author has the opportunity to talk about their code out loud. By asking questions, expressing opinions and challenging assumptions a code reviewer triggers new ideas and different perspectives.
-  - > [name=David] maybe "suggesting alternatives" or something a bit less aggressive than  "challenging assumptions"?
-- Predefined objectives should be kept in mind. Conversation can be powerful but should be kept on a tight leash. It's okay for anyone to stop the conversation and say they feel it is losing focus. In this case it is time to move to the next topic.
--
-- A code review is not an evaluation of the author's worth as a programmer. Throughout the review, participants should keep in mind
-  -  Differences in levels of experience.
-  -  Differences in scientific and programming backgrounds.
-  -  Code quality is often subjective and context dependent.
-  -  *More?*...
-  -  
-- By opening their work for feedback, code authors make *themselves* vulnerable. This vulnerability must be taken into account and respected by reviewers at all times. Reviewers must take caution in expressing feedback and opinions. Authors must respect reviewer's comments and questions.
-- Reviewing can be mentally demanding. It can be difficult for a reviewer to be mindful of how they phrase feedback at all times. Therefore authors should also try not to take feedback personally. This is especially true for written, asynchronous reviews.
-- Example of questionable reviewer's feedback:
-  - You should rename this function
-  - This function should be renamed
-- Examples of good reviewer's feedback
-  - I think this function's name is misleading
-  - This function's name didn't help me understand what it does.
-- Meeting should be kept short, under 60', 45' being a good target duration in most cases. This is to avoid fatigue. Two 45' review meetings will likely be more effective than a single 90' meeting. This can, however, be decided on the spot or ahead of the meeting.
-- Time will likely run out. It is possible than conversations on some of the points could have been shorter. It is also possible that the corresponding points needed to be discussed in details for reasons only made clear during teh review itself. In any case, both authors and reviewers can choose to meet again to continue the review.
+While there is not much existing research, what does exist suggests that for
+research code review, the process should include face-to-face, synchronous
+component \[Petre and Wilson 2015\]. This is because there can be a wide
+disparity in backgrounds for those performing the code review, and both the
+author and reviewer need to make sure they are understanding each other.
+
+A good way to open up this meeting might be for the author to go over the
+scientific context for the code again and the objectives, to remind the reviewer
+of the bigger picture. However, after this, the reviewer should 'drive' the
+meeting according to their notes. The reviewer discusses the code by giving
+direct feedback or asking questions about the code's design, implementation, and
+documentation. But remember, this is a discussion, so the author responds to
+reviewer's comments and questions, explaining implementation and justifying
+decisions.
+
+Live reviews help build trust and understand the other person's mindset. This is
+a conversation in which the code author has the opportunity to talk about their
+code out loud. By asking questions, expressing opinions and suggesting alternatives, a code
+reviewer triggers new ideas and different perspectives. Predefined objectives
+should be kept in mind. Conversation can be powerful but should be kept on a
+tight leash. It's okay for anyone to stop the conversation and say they feel it
+is losing focus. In this case it is time to move to the next topic.
+
+A code review is not an evaluation of the author's worth as a programmer.
+Throughout the review, participants should keep in mind:
+- Differences in levels of experience.
+- Differences in scientific and programming backgrounds.
+- Code quality is often subjective and context dependent.
+
+By opening their work for feedback, code authors make *themselves* vulnerable.
+This vulnerability must be taken into account and respected by reviewers at all
+times, so they should be mindful of how they are raising feedback. A helpful
+technique is to express personal opinions rather than make imperative
+statements. Take this example about suggesting a function should be renamed:
+
+| Imperative statements (risky) | Personal opinion (safer) |
+|-------------------------------|--------------------------|
+| "You should rename this function" | "I think this function's name could be improved" |
+| "This function should be renamed" | "This function's name didn't help me understand what it does." |
+
+Conversely, reviewing is mentally demanding. It can be difficult for a reviewer
+to be mindful of how they phrase feedback at all times. Therefore authors should
+also try not to take feedback personally. This is especially true for written,
+asynchronous reviews.
+
+Meeting should be kept short, under 60', 45' being a good target in most cases.
+This is to avoid fatigue. Two 45' review meetings will likely be more effective
+than a single 90' meeting. This can, however, be decided on the spot or ahead of
+the meeting. Time will likely run out. It is possible than conversations on some
+of the points could have been shorter. It is also possible that the
+corresponding points needed to be discussed in details for reasons only made
+clear during the review itself. In any case, both authors and reviewers can
+choose to meet again to continue the review.
 
 ## Code author implements changes
+
+Once the reviewer has communicated the changes they think the author should
+make, it is time for the author to review these suggestions on their own and
+attempt to make the changes. If the author thinks the changes have met their
+objectives, then the code review process comes to a close. Otherwise, the author
+might return to the reviewer and ask if further review of their code is possible.
 
 ## Rinse and repeat
