@@ -1,5 +1,14 @@
 # Perform code review
 
+The previous phases have all be about setting the best foundation possible for
+the code review. Now it is time to execute and reap the benefits of code review.
+We will walk through the following steps:
+
+1. [Code author communicates code and context](#code-author-communicates-code-and-context)
+1. [Reviewer reviews code](#reviewer-reviews-code)
+1. [Author and reviewer meet](#author-and-reviewer-meet)
+1. [Author makes changes](#code-author-implements-changes)
+
 ## Code author communicates code and context
 
 The first step initiating the actual code review phase is for the code author to
