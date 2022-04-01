@@ -54,7 +54,7 @@ When you share a piece of code with reviewers, attach a
 description of its context. Explain what problem the code solves,
 and how it solves it. Make clear the constraints you had to work with.
 If the code is part of a larger codebase, describe how it fits within
-the bigger logic and explicit the relationships with other parts that
+the bigger logic and make explicit the relationships with other parts that
 use it or are used by it.
 
 > **How to share code?**
@@ -66,12 +66,10 @@ use it or are used by it.
 > option is [GitHub gists](https://gist.github.com/). If you send
 > your code by email, make sure to share the relevant files and clearly
 > identify the version you are sharing.
-
-![To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand side](/dev-review/images/github_permalink.png "To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand sise. Most development platforms can generate links to a particular line, for a particular revision.")
-
-
-> callout here about diff workflows "merge workflow", "github workflow"
-
+> ![To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand side](/dev-review/images/github_permalink.png "To get a link to a particular line (permalink) on GitHub, click on the line number on the left hand side. Most development platforms can generate links to a particular line, for a particular revision.")
+> If you are performing an asynchronous review (see callout at top of [Author
+> and reviewer meet](#author-and-reviewer-meet)) then giving your reviewer a
+> link to a pull/merge request is also an effective sharing mechanism.
 
 ## Reviewer reviews code
 
@@ -126,6 +124,21 @@ These key points can form the focus for when you and the author meet, as
 described in the next section.
 
 ## Author and reviewer meet
+
+Before describing the meeting phase of the code review, it is worth mentioning
+that there is an alternate technique for code review.
+
+> **Asynchronous Review:** The most common form of code review in industry is
+> done _asynchronously_ through platforms like GitHub and GitLab. Authors of
+> changes submit what are called _merge_ or _pull requests_ into the main or
+> development branch of a code repository. Reviewers then leave their comments
+> through the web interface, directly in the context of the changes made.
+> The author addresses the comments, and when a consensus is reached, the changes
+> are merged or rejected. This all happens through the web interface with no
+> real time or face-to-face interaction. While this can be an effective form of
+> review for projects, we feel strongly that researchers with less experience of code
+> review benefit more from the meeting-based approach outlined by this website.
+
 - key points:
   -  there are two ways to do code review: synchronous/in-person, and asynchronous
   -  while there is not much existing research, what does exist suggests that for research code review, the process should include face-to-face, synchronous component [Wilson 2015]
