@@ -45,7 +45,7 @@ Finding a reviewer: Anyone can review code, even if they are not a proficient co
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/</guid>
       <description>Meet and agree on objectives Objective Set the code review up for success by making sure the reviewer and author are on the same page.
-Steps  If they have some, reviewer(s) state their expectation for the code review. If they have some, the code author state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality… provided that participants agree on what &amp;ldquo;improve&amp;rdquo; means.</description>
+Steps  The author describes the overall structure and scientific context of the code to the reviewer(s). If they have some, the code author states their expectation for the code review. If they have some, reviewer(s) state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality, provided that participants agree on what &amp;ldquo;improve&amp;rdquo; means.</description>
     </item>
     
     <item>

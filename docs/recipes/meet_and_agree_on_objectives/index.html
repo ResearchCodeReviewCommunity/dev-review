@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
         <title> - dev-review</title><meta name="Description" content=""><meta property="og:title" content="" />
 <meta property="og:description" content="Meet and agree on objectives Objective Set the code review up for success by making sure the reviewer and author are on the same page.
-Steps  If they have some, reviewer(s) state their expectation for the code review. If they have some, the code author state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality… provided that participants agree on what &ldquo;improve&rdquo; means." />
+Steps  The author describes the overall structure and scientific context of the code to the reviewer(s). If they have some, the code author states their expectation for the code review. If they have some, reviewer(s) state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality, provided that participants agree on what &ldquo;improve&rdquo; means." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://researchcodereviewcommunity.github.io/dev-review/recipes/meet_and_agree_on_objectives/" /><meta property="article:section" content="recipes" />
 
@@ -16,7 +16,7 @@ Steps  If they have some, reviewer(s) state their expectation for the code revie
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content=""/>
 <meta name="twitter:description" content="Meet and agree on objectives Objective Set the code review up for success by making sure the reviewer and author are on the same page.
-Steps  If they have some, reviewer(s) state their expectation for the code review. If they have some, the code author state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality… provided that participants agree on what &ldquo;improve&rdquo; means."/>
+Steps  The author describes the overall structure and scientific context of the code to the reviewer(s). If they have some, the code author states their expectation for the code review. If they have some, reviewer(s) state their expectation for the code review. Author and reviewers agree on the focus of the review  Description Code review can be a powerful tool to improve code quality, provided that participants agree on what &ldquo;improve&rdquo; means."/>
 <meta name="application-name" content="dev-review">
 <meta name="apple-mobile-web-app-title" content="dev-review"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -29,7 +29,7 @@ Steps  If they have some, reviewer(s) state their expectation for the code revie
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/meet_and_agree_on_objectives\/"
-        },"genre": "recipes","wordcount":  599 ,
+        },"genre": "recipes","wordcount":  708 ,
         "url": "https:\/\/researchcodereviewcommunity.github.io\/dev-review\/recipes\/meet_and_agree_on_objectives\/","publisher": {
             "@type": "Organization",
             "name": "Author"},"author": {
@@ -78,33 +78,45 @@ Steps  If they have some, reviewer(s) state their expectation for the code revie
 <h2 id="objective">Objective</h2>
 <p>Set the code review up for success by making sure the reviewer and author are on the same page.</p>
 <h2 id="steps">Steps</h2>
-<ul>
+<ol>
+<li>The author describes the overall structure and scientific context of the code
+to the reviewer(s).</li>
+<li>If they have some, the code author states their expectation for the code review.</li>
 <li>If they have some, reviewer(s) state their expectation for the code review.</li>
-<li>If they have some, the code author state their expectation for the code review.</li>
 <li>Author and reviewers agree on the focus of the review</li>
-</ul>
+</ol>
 <h2 id="description">Description</h2>
-<p>Code review can be a powerful tool to improve code quality… provided
+<p>Code review can be a powerful tool to improve code quality, provided
 that participants agree on what &ldquo;improve&rdquo; means. Should you focus on
 code readability? Or performance? For a code review to be productive,
 both the author and the reviewer(s) must agree on the direction to
 follow.</p>
-<p>During the startup meeting, all participants in the review state their
-expectations and agree on what the objective of the review should be.
-As the code author, you could plan to receive feedback on a particular
-design choice you made last week.  Or maybe you&rsquo;re planning to pick
+<p>To kick off the startup meeting, we recommend that the code author provide some
+context for their code base. Here are some questions the code author might want
+to consider:</p>
+<ul>
+<li>What scientific problem or area does this computer program address?</li>
+<li>What are the programs inputs and outputs?</li>
+<li>How is the program used? Is is a library called by other programs or is it
+compiled directly itself to produce results?</li>
+<li>What is the overall structure of the code? Its main modules, classes, functions?</li>
+</ul>
+<p>Then, during the remainder of the startup meeting, all participants in the
+review state their expectations and agree on what the objective of the review
+should be.  As the code author, you could plan to receive feedback on a
+particular design choice you made last week.  Or maybe you&rsquo;re planning to pick
 the reviewer&rsquo;s brain about optimising the performance of that sluggish
-subroutine. As a reviewer, you could be motivated by learning new
-features of a programming language. You could also want to put the
-focus on readability, because you think there is room for improvement
-in this direction. These expectations must be made clear during the
-startup meeting, before the review itself starts.</p>
+subroutine. As a reviewer, you could be motivated by learning new features of a
+programming language. You could also want to put the focus on readability,
+because you think there is room for improvement in this direction. These
+expectations must be made clear during the startup meeting, before the review
+itself starts.</p>
 <p>As a rule of thumb, we recommend that the review focuses on one of the
 following themes, ordered by priority:</p>
 <ul>
 <li>Code readability</li>
 <li>Code maintainability</li>
-<li>Code extensability</li>
+<li>Code extensability (can the code be extended or added to)</li>
 <li>Performance</li>
 </ul>
 <p>Particularly, we do not recommend focusing on performance unless it is
