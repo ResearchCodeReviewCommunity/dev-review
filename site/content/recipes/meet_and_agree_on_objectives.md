@@ -6,36 +6,48 @@ Set the code review up for success by making sure the reviewer and author are on
 
 ## Steps
 
--  If they have some, reviewer(s) state their expectation for the code review.
--  If they have some, the code author state their expectation for the code review.
--  Author and reviewers agree on the focus of the review
+1. The author describes the overall structure and scientific context of the code
+   to the reviewer(s).
+1. If they have some, the code author states their expectation for the code review.
+1. If they have some, reviewer(s) state their expectation for the code review.
+1. Author and reviewers agree on the focus of the review
 
 ## Description
 
-Code review can be a powerful tool to improve code quality&#x2026; provided
+Code review can be a powerful tool to improve code quality, provided
 that participants agree on what "improve" means. Should you focus on
 code readability? Or performance? For a code review to be productive,
 both the author and the reviewer(s) must agree on the direction to
 follow.
 
-During the startup meeting, all participants in the review state their
-expectations and agree on what the objective of the review should be.
-As the code author, you could plan to receive feedback on a particular
-design choice you made last week.  Or maybe you're planning to pick
+To kick off the startup meeting, we recommend that the code author provide some
+context for their code base. Here are some questions the code author might want
+to consider:
+
+- What scientific problem or area does this computer program address?
+- What are the programs inputs and outputs?
+- How is the program used? Is is a library called by other programs or is it
+  compiled directly itself to produce results?
+- What is the overall structure of the code? Its main modules, classes, functions?
+
+Then, during the remainder of the startup meeting, all participants in the
+review state their expectations and agree on what the objective of the review
+should be.  As the code author, you could plan to receive feedback on a
+particular design choice you made last week.  Or maybe you're planning to pick
 the reviewer's brain about optimising the performance of that sluggish
-subroutine. As a reviewer, you could be motivated by learning new
-features of a programming language. You could also want to put the
-focus on readability, because you think there is room for improvement
-in this direction. These expectations must be made clear during the
-startup meeting, before the review itself starts.
+subroutine. As a reviewer, you could be motivated by learning new features of a
+programming language. You could also want to put the focus on readability,
+because you think there is room for improvement in this direction. These
+expectations must be made clear during the startup meeting, before the review
+itself starts.
 
 As a rule of thumb, we recommend that the review focuses on one of the
 following themes, ordered by priority:
 
--   Code readability
--   Code maintainability
--   Code extensability
--   Performance
+- Code readability
+- Code maintainability
+- Code extensability (can the code be extended or added to)
+- Performance
 
 Particularly, we do not recommend focusing on performance unless it is
 justified from a scientific perspective. Optimising for performance
