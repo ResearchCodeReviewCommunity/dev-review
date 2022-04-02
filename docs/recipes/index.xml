@@ -54,7 +54,8 @@ Steps  If they have some, reviewer(s) state their expectation for the code revie
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://researchcodereviewcommunity.github.io/dev-review/recipes/perform_code_review/</guid>
-      <description>Perform code review Code author communicates code and context The first step initiating the actual code review phase is for the code author to select a segment of their code to be reviewed. The success and impact of the code review will depend, to some degree, on how appropriate the selected segment is, so it warrants some consideration from the code author. Here are some points to keep in mind when selecting your code segment.</description>
+      <description>Perform code review The previous phases have all be about setting the best foundation possible for the code review. Now it is time to execute and reap the benefits of code review. We will walk through the following steps:
+ Code author communicates code and context Reviewer reviews code Author and reviewer meet Author makes changes  Code author communicates code and context The first step initiating the actual code review phase is for the code author to select a segment of their code to be reviewed.</description>
     </item>
     
     <item>
