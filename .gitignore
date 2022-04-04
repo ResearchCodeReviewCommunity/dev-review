@@ -37,7 +37,7 @@ site/resources/_gen/*
 dist/
 build/
 .venv
-doc/_build
+docs/_build
 
 # Mac
 .DS_Store
