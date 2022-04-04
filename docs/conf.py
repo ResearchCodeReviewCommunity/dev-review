@@ -17,7 +17,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'dev_review'
+project = 'Code Review During Research'
 copyright = '2022, Research Code Review Community'
 author = 'Research Code Review Community'
 
