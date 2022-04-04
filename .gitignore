@@ -30,3 +30,13 @@ site/resources/_gen/*
 .idea
 ## vscode
 .vscode
+
+# Python
+*__pycache__*
+*egg-info/
+dist/
+build/
+.venv
+
+# Mac
+.DS_Store
