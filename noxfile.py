@@ -1,14 +1,9 @@
 import os
 import pathlib
-import shutil
 
 import nox
 
-DIR = pathlib.Path(__file__).parent.resolve()
 VENV_DIR = pathlib.Path('./.venv').resolve()
-
-
-nox.options.sessions = ['test', 'coverage']
 
 
 @nox.session
@@ -43,6 +38,7 @@ def docs(session: nox.Session) -> None:
     if session.posargs:
         if "autobuild" in session.posargs:
             # autobuild does the build bit, too
+            session.install(".[docs]")
             session.run("sphinx-autobuild", "docs", "docs/_build/html")
         elif "serve" in session.posargs:
             session.install(".[docs]")
