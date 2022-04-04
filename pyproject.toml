@@ -20,7 +20,7 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-doc = [
+docs = [
     "myst-parser >=0.17.0",
     "Sphinx>=3.4.3",
     "sphinxext-opengraph  >=0.5.1",
