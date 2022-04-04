@@ -32,6 +32,7 @@ release = '0.1.0'
 # ones.
 extensions = [
     'myst_parser',
+    'sphinxcontrib.mermaid',
     'sphinx.ext.autodoc',
     'sphinx.ext.coverage',
     'sphinx_copybutton',
@@ -49,6 +50,8 @@ extensions = [
 templates_path = ['_templates']
 
 source_suffix = ['.rst', '.md']
+
+master_doc = '_index'
 
 # List of patterns, relative to source directory, that match files and
 # directories to ignore when looking for source files.
