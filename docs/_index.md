@@ -20,14 +20,14 @@ accessible by researchers at all levels, from research students to
 senior professors, whether they are new to programming or software
 engineering experts.**
 
-{{< mermaid >}}
+```{mermaid}
 graph TD;
   A(Initial reviewer-author meeting) --> B(Reviewer examines code)
   B --> C(Reviewer compiles suggestions)
   C --> D(Author and reviewer go over code)
   D --> E(Author improves code)
   E --> B
-{{< /mermaid >}}
+```
 
 ## Getting Started
 Please see [this page](flowcharts/high-level)
