@@ -40,7 +40,8 @@ satisfy to make a code review worthwhile for both parties, and there are some
 places to search for reviewers that have a higher chance of yielding someone
 that fulfills these criteria. Let's look at these now.
 
-### Step 1: Places to Look {#search}
+(find-reviewer-search)=
+### Step 1: Places to Look
 
 When looking for a reviewer, your first port of call should almost always be
 your own research group. Your colleagues are the most likely to be using the
@@ -76,7 +77,7 @@ review in your research group, that problem will probably resurface here.
 Another great place to search within your institution or region are language or
 library-specific community groups (e.g. a Python or R User Group). This can
 help ensure the reviewer has experience with the same or similar tools you use.
-Before [making your advertisement](#contact), consider asking one of the
+Before {ref}`making your advertisement <find-reviewer-contact>`, consider asking one of the
 community managers or someone you know in the community whether code review is
 something that has been done before or others might be interested in. Just as
 in the case with colleagues, you will be relying on people to volunteer their
@@ -106,7 +107,8 @@ determine whether it could suit your needs. Anecdotally, StackExchange sites can
 
 </details>
 
-### Step 2: Criteria for Screening {#criteria}
+(find-reviewer-criteria)=
+### Step 2: Criteria for Screening
 
 Before contacting a potential reviewer, consider whether they are a good fit to
 the code being reviewed. Ideally, a reviewer will have some experience in the
@@ -138,7 +140,8 @@ community to advertsie in.
    library or tool and how essential it is to the functionality of your code.
 </details>
 
-### Step 3: Contact candidate or advertise {#contact}
+(find-reviewer-contact)=
+### Step 3: Contact candidate or advertise
 
 Everyone has their own way of writing messages, and we don't want to be too
 prescriptive about how you reach out to a potential reviewer. If you already
@@ -158,12 +161,13 @@ you compose:
   identify the reasons that motivated you to get your code reviewed.
 - A brief summary of what your code does and any particular aspects you want
   addressed.
-- [Any of the criteria for a suitable reviewer](#criteria) that you weren't
-  able to answer yourself before reaching out.
+- {ref}`Any of the criteria for a suitable reviewer <find-reviewer-criteria>` 
+  that you weren't able to answer yourself before reaching out.
 - An idea of the time commitment (**TODO** what is our estimate for how long the
   whole process will take?)
 
-### Step 4: Rinse and Repeat {#repeat}
+(find-reviewer-repeat)=
+### Step 4: Rinse and Repeat
 
 Loop through steps 1 to 3 until you get a bite. Once you have your reviewer,
 proceed to the [next step](meet_and_agree_on_objectives) and arrange a meeting
