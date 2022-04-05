@@ -34,8 +34,7 @@ Please see [this page](flowcharts/high-level)
 for an overview of how you can get started with code review.
 
 ## Resources
-* [Review Guidelines, References and Related Work](guidelines-refs-related)
-* [Glossary](glossary)
+* [References and Related Work](refs-related)
 
 ## Why code reviews?
 
