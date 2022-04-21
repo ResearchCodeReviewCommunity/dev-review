@@ -26,7 +26,7 @@ to consider:
 
 - What scientific problem or area does this computer program address?
 - What are the programs inputs and outputs?
-- How is the program used? Is is a library called by other programs or is it
+- How is the program used? Is this a library called by other programs or is it
   compiled directly itself to produce results?
 - What is the overall structure of the code? Its main modules, classes, functions?
 
@@ -46,7 +46,7 @@ following themes, ordered by priority:
 
 - Code readability
 - Code maintainability
-- Code extensability (can the code be extended or added to)
+- Code extensibility (can the code be extended or added to)
 - Performance
 
 Particularly, we do not recommend focusing on performance unless it is
@@ -68,12 +68,12 @@ focus of the code review.
     the structure easy to understand, even by colleagues with little
     experience in C++. R and A decide
 
--   A is looking is unsure about a the design of a module their wrote
-    last week.  It works, but it is complicated and contains a lot of
+-   A is unsure about the design of a module they wrote
+    last week. It works, but it is complicated and contains a lot of
     duplicated code. They would like somebody else to assess
     readability and potentially suggest alternative design choices.  R
     is keen on helping a colleague improving their code, but doesn't
-    have specific expectations. they find the code easy to read although
+    have specific expectations. They find the code easy to read although
     they agree that the structure is odd.  A and R decide to have a look
     at the module, looking to better define the issue, assess current
     maintainability and, if time allows, draft a few solutions to
