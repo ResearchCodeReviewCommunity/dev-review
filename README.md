@@ -5,8 +5,26 @@ using [ReadTheDocs](https://readthedocs.org/).
 This site uses the [Sphinx Book](https://sphinx-book-theme.readthedocs.io) theme.
 This site is available here: https://researchcodereviewcommunity.github.io/dev-review/
 
-The following branches in this repository are important:
-- `main`: the markdown files corresponding to the current live version of the website
+The content of the website is contained in markdown files located in the `docs/` folder and are structured like so
+
+~~~text
+docs/
+├── flowcharts    <-- any mermaid flowcharts used in multiple locations
+│   └── high-level.md
+├── glossary.md    <-- a glossary of important terms for code review
+├── guidelines    <-- more general guidelines for code review apart from the more prescriptive recipes
+│   ├── approach.md
+│   └── points-to-check-for-reviewers.md
+├── index.md    <-- the landing page of the website
+├── recipes    <-- our suggested steps to follow during the code review process
+│   ├── explain_code_structure.md
+│   ├── find_a_reviewer.md
+│   ├── lonecoder.md
+│   ├── meet_and_agree_on_objectives.md
+│   ├── perform_code_review.md
+│   └── recipe_template.md
+└── refs-related.md    <-- references for material related to code review
+~~~
 
 ## Dependencies
 We use [`nox`](https://nox.thea.codes/en/stable/)
