@@ -56,7 +56,7 @@ git clone git@github.com:ResearchCodeReviewCommunity/dev-review.git
 ```
 
 ## Development
-To preview changes locally, you can build and serve the website locally.
+To preview changes, you can build and serve the website locally.
 
 ```
 sphinx-build -nW --keep-going -b html doc/ doc/_build/html
