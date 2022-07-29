@@ -17,10 +17,10 @@ graph TD;
   H -- Yes --> D
   H -- No --> I([Finish])
 
-  click B "./high-level.html#find-a-reviewer" "Find a reviewer"
-  click C "./high-level.html#meet-and-agree-on-objectives" "Meet and agree on objectives"
-  click D,E,F,G "./high-level.html#perform-code-review" "Perform Code Review"
-  click I "./high-level.html#finish" "Finish"
+  click B "#find-a-reviewer" "Find a reviewer"
+  click C "#meet-and-agree-on-objectives" "Meet and agree on objectives"
+  click D,E,F,G "#perform-code-review" "Perform Code Review"
+  click I "#finish" "Finish"
 
   classDef default fill:#8EB6DE,stroke:#162D4D,stroke-width:2px,color:#162D4D;
   classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
