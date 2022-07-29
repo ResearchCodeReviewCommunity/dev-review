@@ -19,7 +19,7 @@ There are many ways to install but we recommend the following:
 
 - macOS/Linux
 ```
-brew install pipx
+brew install pipx  # or `python3 -m pip install --user pipx`
 pipx install nox
 nox -s dev
 ```
