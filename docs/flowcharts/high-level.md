@@ -3,7 +3,7 @@
 Here's a high-level view of a workflow researchers can follow to make code
 review part of their development process.
 
-{{< mermaid >}}
+```{mermaid}
 %% codereview mermaid
 graph TD;
   Link(Click on orange boxes for more detail)
@@ -17,15 +17,15 @@ graph TD;
   H -- Yes --> D
   H -- No --> I([Finish])
 
-  click B "./#find-a-reviewer" "Find a reviewer"
-  click C "./#meet-and-agree-on-objectives" "Meet and agree on objectives"
-  click D,E,F,G "./#perform-code-review" "Perform Code Review"
-  click I "./#finish" "Finish"
+  click B "#find-a-reviewer" "Find a reviewer"
+  click C "#meet-and-agree-on-objectives" "Meet and agree on objectives"
+  click D,E,F,G "#perform-code-review" "Perform Code Review"
+  click I "#finish" "Finish"
 
   classDef default fill:#8EB6DE,stroke:#162D4D,stroke-width:2px,color:#162D4D;
   classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
   class Link,B,C,D,E,F,G,I linkedBox
-{{< /mermaid >}}
+```
 
 ### Find a reviewer
 
