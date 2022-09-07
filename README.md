@@ -3,7 +3,7 @@
 This repository is automatically built from [markdown](https://commonmark.org/) files by [Sphinx](https://www.sphinx-doc.org/) and the [MyST parser](https://myst-parser.readthedocs.io)
 using [ReadTheDocs](https://readthedocs.org/).
 This site uses the [Sphinx Book](https://sphinx-book-theme.readthedocs.io) theme.
-This site is available here: https://researchcodereviewcommunity.github.io/dev-review/
+This site is available here: https://dev-review.readthedocs.io/en/latest/
 
 The content of the website is contained in markdown files located in the `docs/` folder and are structured like so
 
