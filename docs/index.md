@@ -50,3 +50,12 @@ review a standard practice among research software developer would
 generally raise the quality of software-based research as a whole,
 bringing the development of quality software at the core of a
 researcher's routine.
+
+```{toctree}
+:hidden: true
+:maxdepth: 2
+
+flowcharts/high-level
+refs-related
+glossary
+```
