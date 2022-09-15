@@ -83,3 +83,12 @@ on](../../recipes/meet_and_agree_on_objectives/)
 objectives phase are met. In case both parties do not agree, the code
 author has decision power on whether or not to end the code review
 process.
+
+```{toctree}
+:hidden: true
+:maxdepth: 1
+
+../../recipes/find_a_reviewer
+../../recipes/meet_and_agree_on_objectives
+../../recipes/perform_code_review/
+```
