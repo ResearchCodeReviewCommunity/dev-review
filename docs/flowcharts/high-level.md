@@ -78,9 +78,9 @@ is an iterative process, itself made of 5 phases:
 ### Finish
 
 Ideally, the code review cycle ends when both the code author and
-reviewer(s) agree that the objectives set at the [Meet and agree
-on](../../recipes/meet_and_agree_on_objectives/)
-objectives phase are met. In case both parties do not agree, the code
+reviewer(s) agree that the objectives set in the 
+[initial meetings](../../recipes/meet_and_agree_on_objectives/)
+have been met. In case both parties do not agree, the code
 author has decision power on whether or not to end the code review
 process.
 
