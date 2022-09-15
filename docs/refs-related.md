@@ -19,7 +19,10 @@ Guidelines were adapted from the following sources:
   [https://ieeexplore.ieee.org/abstract/document/7950877/](https://www.michaelagreiler.com/wp-content/uploads/2019/03/Code-Reviewing-in-the-Trenches-Understanding-Challenges-Best-Practices-and-Tool-Needs.pdf)
 
 ## Related work
-##### Guides and checklists
+- https://codecheck.org.uk/ provides workflow, guidelines and tools 
+  for code review as part of peer review for publication.
+
+### Guides and checklists
 - Checklists from [the Turing Way Guide to Reproducible Research](https://the-turing-way.netlify.app/welcome.html)
   chapter on [code review](https://the-turing-way.netlify.app/reproducible-research/reviewing.html):  
   https://the-turing-way.netlify.app/reproducible-research/reviewing/reviewing-checklist.html
@@ -27,6 +30,8 @@ Guidelines were adapted from the following sources:
 ### Blog posts
 * "Code reviews: the lab meeting for code", Fernando Perez
   http://fperez.org/py4science/code_reviews.html
+* "Research Code Review: Best practices, Challenges and Opportunities", Emmy Tsang
+  https://osc-delft.github.io/posts/2021/09/03/Research-Code-Review/
 
 ### Podcasts
 * Michaela Greiler on Code Reviews
