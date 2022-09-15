@@ -30,8 +30,34 @@ graph TD;
 ```
 
 ## Getting Started
-Please see [this page](flowcharts/high-level)
-for an overview of how you can get started with code review.
+
+This site presents a lightweight process 
+for scientists and others writing research code 
+to carry out code review during development.
+
+The flowchart below shows the process at a high level.
+Please head to [this page](flowcharts/high-level)
+for an introduction to the process, 
+to help you get started with code review during research.
+
+```{mermaid}
+%% codereview mermaid
+graph TD;
+
+  A([Start]) --> B(Find a reviewer)
+  B --> C(Meet and agree on objectives)
+  C --> D(Author prepares code segment)
+  D --> E(Reviewer makes initial comments)
+  E --> F(Realtime review meeting)
+  F --> G(Improvements and follow up)
+  G --> H{More review needed?}
+  H -- Yes --> D
+  H -- No --> I([Finish])
+
+  classDef default fill:#8EB6DE,stroke:#162D4D,stroke-width:2px,color:#162D4D;
+  classDef linkedBox fill:#FABB00,stroke:#000,stroke-width:2px,color:#000;
+  class B,C,D,E,F,G,I linkedBox
+```
 
 ## Resources
 * [Review Guidelines, References and Related Work](refs-related)
