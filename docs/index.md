@@ -11,7 +11,7 @@ reviews will greatly improve the quality of your software by giving
 you access to human feedback on your code and programming
 practices. Code reviews are also opportunities for **knowledge
 transfer**. Whether you participate as a reviewer or reviewee, code
-reviews are opportunities to learn from your colleagues .. or teach
+reviews are opportunities to learn from your colleagues ... or teach
 them a few tricks!
 
 **This website aims at providing a clear, opinionated workflow
