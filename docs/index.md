@@ -1,24 +1,53 @@
-# Code Review During Development
+# Code Review During Research
+## A lightweight workflow for researchers
 
-From small data analysis scripts to large simulation software, **quality
-software is essential to quality research**. Code readability,
-maintainability and extensibility are key to research outputs that
-can be reproduced and built upon.
+What is *code review*?
+Even scientists that routinely write code for analysis
+may not be familiar with the term.
+At its core, code review consists of
+someone else reading code you wrote
+and providing feedback.
+For software engineers in industry and academia,
+code review has come to represent a standardized process,
+carried out according to an established set of good practices.
+When it works, this process makes code
+easier to read, easier to maintain,
+and easier to extend.
+Although code review is a standard practice
+in the software industry and in open source software communities, it is still comparatively rare in academia.
 
-But how can you assess the readability of your code? Have someone else
-read it!  Whether your are an advanced programmer or a beginner, code
-reviews will greatly improve the quality of your software by giving
-you access to human feedback on your code and programming
-practices. Code reviews are also opportunities for **knowledge
-transfer**. Whether you participate as a reviewer or reviewee, code
-reviews are opportunities to learn from your colleagues ... or teach
-them a few tricks!
+The goal of this website is to provide you,
+a researcher, with a way to do code review.
+We provide a lightweight process
+meant to be easy for all to use.
+In particular, this workflow is designed
+to be accessible to
+a single researcher working
+independently, such as a graduate student
+developing code for their own thesis project.
+Although code review in a research context
+has not been studied as well as code review in industry,
+the guidelines we provide are based
+on existing studies,
+notably [Petre and Wilson 2014](https://arxiv.org/abs/1407.5648).
+For additional literature,
+please see the [references and related work](./refs-related.md) page.
+The guidelines are also based on the experience
+of the authors running
+the [Oxford Code Review Network](https://github.com/OxfordCodeReviewNet/forum),
+and on their experiences carrying out code review
+in academia and in the private sector.
 
-**This website aims at providing a clear, opinionated workflow
-for code reviews among researchers in academia. It is designed to be
-accessible by researchers at all levels, from research students to
-senior professors, whether they are new to programming or software
-engineering experts.**
+## Getting Started
+
+The core workflow that we suggest
+is presented below.
+To find out about how you can
+get started with code review,
+and a high-level overview of
+this lightweight workflow,
+please see [this page](flowcharts/high-level)
+for an overview of how you can get started with code review.
 
 ```{mermaid}
 graph TD;
@@ -29,27 +58,9 @@ graph TD;
   E --> B
 ```
 
-## Getting Started
-Please see [this page](flowcharts/high-level)
-for an overview of how you can get started with code review.
-
 ## Resources
 * [Review Guidelines, References and Related Work](refs-related)
 * [Glossary](glossary)
-
-## Why code reviews?
-
-Code review is standard practice in the software industry, as well as
-open source software communities. It is, however, very rare in
-academia.  Very generally, we believe that developers of research
-software, at every level or career stage, would greatly benefit from
-regular human feedback on the code they write. On an individual level,
-this would provide effective learning opportunities and raise the
-quality of the programs they write. On a collective level, making code
-review a standard practice among research software developer would
-generally raise the quality of software-based research as a whole,
-bringing the development of quality software at the core of a
-researcher's routine.
 
 ```{toctree}
 :hidden: true
@@ -59,3 +70,9 @@ flowcharts/high-level
 refs-related
 glossary
 ```
+
+## About
+
+This site is one of the products of
+the [Research Code Review Community](https://github.com/ResearchCodeReviewCommunity),
+that formed to open up dialogues and build bridges across efforts to integrate code review into research.
